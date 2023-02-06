@@ -1,13 +1,11 @@
 package models;
 
-import java.util.List;
 
 public class Meal {
     private int idMeal;
     private String name, description;
     private double cost;
     private Boolean active;
-    private List<Food> lstFood;
 
     public int getIdMeal() {
         return idMeal;
@@ -47,14 +45,5 @@ public class Meal {
 
     public void setActive(Boolean active) {
         this.active = active;
-    }
-
-    public List<Food> getLstFood() {
-        return lstFood;
-    }
-
-    public void setLstFood(List<Food> lstFood) {
-        this.lstFood = lstFood;
-    }
-    
+    }    
 }

@@ -1,9 +1,9 @@
 package models;
 
 public class Person {
-    public int idPerson;
-    public boolean active;
-    public String fName, sName, oName, fSurname, sSurname, 
+    private int idPerson;
+    private boolean active;
+    private String fName, sName, oName, fSurname, sSurname, 
             mSurname, dob, gender, idNo, phone, email,ethnicity,dateCrea, dateMod;
 
     public int getIdPerson() {

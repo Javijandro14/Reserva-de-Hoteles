@@ -1,10 +1,11 @@
 package models;
 
 public class Permissions {
+
     private int idPermission;
     private String dateCrea, dateMod;
-    private Module module;
-    private Role role;
+    private int idModule;
+    private int idRole;
     private Boolean active;
 
     public int getIdPermission() {
@@ -31,20 +32,20 @@ public class Permissions {
         this.dateMod = dateMod;
     }
 
-    public Module getModule() {
-        return module;
+    public int getIdModule() {
+        return idModule;
     }
 
-    public void setModule(Module module) {
-        this.module = module;
+    public void setIdModule(int idModule) {
+        this.idModule = idModule;
     }
 
-    public Role getRole() {
-        return role;
+    public int getIdRole() {
+        return idRole;
     }
 
-    public void setRole(Role role) {
-        this.role = role;
+    public void setIdRole(int idRole) {
+        this.idRole = idRole;
     }
 
     public Boolean getActive() {
@@ -54,6 +55,5 @@ public class Permissions {
     public void setActive(Boolean active) {
         this.active = active;
     }
-    
-    
+
 }

@@ -1,19 +1,10 @@
 package models;
 
 
-public class Users {
-    private Person person;
-    private int idUser;
+public class User {
+    private int idUser, idPerson;
     private String username, pass, type, dateCrea, dateMod;
     private boolean active;
-
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
 
     public int getIdUser() {
         return idUser;
@@ -70,6 +61,13 @@ public class Users {
     public void setActive(boolean active) {
         this.active = active;
     }
-    
+
+    public int getIdPerson() {
+        return idPerson;
+    }
+
+    public void setIdPerson(int idPerson) {
+        this.idPerson = idPerson;
+    }
     
 }

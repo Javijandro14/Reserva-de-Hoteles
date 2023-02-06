@@ -1,12 +1,11 @@
 package models;
 
 public class Events {
-    private int idEvent;
+    private int idEvent, idArea;
     private Boolean active;
     private double cost;
     private String name, description, startDate, endDate, duration, dateCrea, dateMod;
-    private Area area;
-
+    
     public int getIdEvent() {
         return idEvent;
     }
@@ -87,12 +86,13 @@ public class Events {
         this.dateMod = dateMod;
     }
 
-    public Area getArea() {
-        return area;
+    public int getIdArea() {
+        return idArea;
     }
 
-    public void setArea(Area area) {
-        this.area = area;
+    public void setIdArea(int idArea) {
+        this.idArea = idArea;
     }
-    
+
+        
 }

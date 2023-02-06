@@ -1,11 +1,11 @@
 package models;
 
 public class Reservation {
-    private String idReservation, fechaCrea, fechaMod;
+    private String idReservation, dateCrea, dateMod;
     private Boolean active;
-    private Client client;
-    private Room room;
-    private Packages packages;
+    private int idClient;
+    private int idRoom;
+    private int idPackages;
 
     public String getIdReservation() {
         return idReservation;
@@ -15,20 +15,20 @@ public class Reservation {
         this.idReservation = idReservation;
     }
 
-    public String getFechaCrea() {
-        return fechaCrea;
+    public String getDateCrea() {
+        return dateCrea;
     }
 
-    public void setFechaCrea(String fechaCrea) {
-        this.fechaCrea = fechaCrea;
+    public void setDateCrea(String dateCrea) {
+        this.dateCrea = dateCrea;
     }
 
-    public String getFechaMod() {
-        return fechaMod;
+    public String getDateMod() {
+        return dateMod;
     }
 
-    public void setFechaMod(String fechaMod) {
-        this.fechaMod = fechaMod;
+    public void setDateMod(String dateMod) {
+        this.dateMod = dateMod;
     }
 
     public Boolean getActive() {
@@ -39,29 +39,29 @@ public class Reservation {
         this.active = active;
     }
 
-    public Client getClient() {
-        return client;
+    public int getIdClient() {
+        return idClient;
     }
 
-    public void setClient(Client client) {
-        this.client = client;
+    public void setIdClient(int idClient) {
+        this.idClient = idClient;
     }
 
-    public Room getRoom() {
-        return room;
+    public int getIdRoom() {
+        return idRoom;
     }
 
-    public void setRoom(Room room) {
-        this.room = room;
+    public void setIdRoom(int idRoom) {
+        this.idRoom = idRoom;
     }
 
-    public Packages getPackages() {
-        return packages;
+    public int getIdPackages() {
+        return idPackages;
     }
 
-    public void setPackages(Packages packages) {
-        this.packages = packages;
+    public void setIdPackages(int idPackages) {
+        this.idPackages = idPackages;
     }
-    
+
     
 }

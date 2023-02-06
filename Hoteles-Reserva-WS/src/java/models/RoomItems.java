@@ -1,16 +1,16 @@
 package models;
 
 public class RoomItems {
-    private Room room;
+    private int idRoom;
     private String name;
     private Boolean active;
 
-    public Room getRoom() {
-        return room;
+    public int getIdRoom() {
+        return idRoom;
     }
 
-    public void setRoom(Room room) {
-        this.room = room;
+    public void setIdRoom(int idRoom) {
+        this.idRoom = idRoom;
     }
 
     public String getName() {

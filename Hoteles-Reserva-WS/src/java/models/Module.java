@@ -1,9 +1,9 @@
 package models;
 
 public class Module {
-    private int idModule;
+    private int idModule, idFatherModule;
     private String name, description, path, level, order, dateCrea, dateMod;
-    private Module module;
+    private Boolean active;
 
     public int getIdModule() {
         return idModule;
@@ -69,12 +69,22 @@ public class Module {
         this.dateMod = dateMod;
     }
 
-    public Module getModule() {
-        return module;
+    public int getIdFatherModule() {
+        return idFatherModule;
     }
 
-    public void setModule(Module module) {
-        this.module = module;
+    public void setIdFatherModule(int idFatherModule) {
+        this.idFatherModule = idFatherModule;
+    }
+
+    
+
+    public Boolean getActive() {
+        return active;
+    }
+
+    public void setActive(Boolean active) {
+        this.active = active;
     }
     
 }

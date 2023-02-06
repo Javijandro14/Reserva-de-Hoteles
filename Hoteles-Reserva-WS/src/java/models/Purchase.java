@@ -2,7 +2,7 @@ package models;
 
 public class Purchase {
     private int idPurchase;
-    private Client client;
+    private int idClient;
     private String description, transactionDate;
     private double total;
 
@@ -14,14 +14,15 @@ public class Purchase {
         this.idPurchase = idPurchase;
     }
 
-    public Client getClient() {
-        return client;
+    public int getIdClient() {
+        return idClient;
     }
 
-    public void setClient(Client client) {
-        this.client = client;
+    public void setIdClient(int idClient) {
+        this.idClient = idClient;
     }
 
+    
     public String getDescription() {
         return description;
     }

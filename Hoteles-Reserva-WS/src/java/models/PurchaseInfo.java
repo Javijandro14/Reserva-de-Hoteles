@@ -1,18 +1,9 @@
 package models;
 
 public class PurchaseInfo {
-    private int idPurchaseInfo;
     private double cost, discounts, total;
-    private String description, dateTransaction;
-    private Purchase purchase;
-
-    public int getIdPurchaseInfo() {
-        return idPurchaseInfo;
-    }
-
-    public void setIdPurchaseInfo(int idPurchaseInfo) {
-        this.idPurchaseInfo = idPurchaseInfo;
-    }
+    private String description;
+    private int idPurchase;
 
     public double getCost() {
         return cost;
@@ -46,21 +37,13 @@ public class PurchaseInfo {
         this.description = description;
     }
 
-    public String getDateTransaction() {
-        return dateTransaction;
+    public int getIdPurchase() {
+        return idPurchase;
     }
 
-    public void setDateTransaction(String dateTransaction) {
-        this.dateTransaction = dateTransaction;
+    public void setIdPurchase(int idPurchase) {
+        this.idPurchase = idPurchase;
     }
 
-    public Purchase getPurchase() {
-        return purchase;
-    }
-
-    public void setPurchase(Purchase purchase) {
-        this.purchase = purchase;
-    }
-    
     
 }

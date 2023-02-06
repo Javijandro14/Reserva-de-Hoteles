@@ -5,7 +5,7 @@ public class Food {
     private double cost;
     private String name, description, type, dateCrea, dateMod;
     private Boolean active;
-    private Restaurant restaurant;
+    private int idRestaurant;
 
     public int getIdFood() {
         return idFood;
@@ -71,13 +71,14 @@ public class Food {
         this.active = active;
     }
 
-    public Restaurant getRestaurant() {
-        return restaurant;
+    public int getIdRestaurant() {
+        return idRestaurant;
     }
 
-    public void setRestaurant(Restaurant restaurant) {
-        this.restaurant = restaurant;
+    public void setIdRestaurant(int idRestaurant) {
+        this.idRestaurant = idRestaurant;
     }
+
     
     
 }

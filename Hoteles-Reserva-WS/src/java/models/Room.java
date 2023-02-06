@@ -1,10 +1,9 @@
 package models;
 
 public class Room {
-    private int idRoom, numShowers, numRooms;
+    private int idRoom, numShowers, numRooms, status;
     private String description, dateCrea, dateMod;
-    private RoomItems roomItems;
-    private Area area;
+    private int idArea;
 
     public int getIdRoom() {
         return idRoom;
@@ -54,20 +53,20 @@ public class Room {
         this.dateMod = dateMod;
     }
 
-    public RoomItems getRoomItems() {
-        return roomItems;
+    public int getStatus() {
+        return status;
     }
 
-    public void setRoomItems(RoomItems roomItems) {
-        this.roomItems = roomItems;
+    public void setStatus(int status) {
+        this.status = status;
     }
 
-    public Area getArea() {
-        return area;
+    public int getIdArea() {
+        return idArea;
     }
 
-    public void setArea(Area area) {
-        this.area = area;
+    public void setIdArea(int idArea) {
+        this.idArea = idArea;
     }
-    
+
 }

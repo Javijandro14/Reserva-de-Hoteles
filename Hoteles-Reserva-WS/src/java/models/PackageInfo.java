@@ -1,16 +1,16 @@
 package models;
 
 public class PackageInfo {
-    private Packages packages;
+    private int idPackages;
     private String name;
     private Boolean active;
 
-    public Packages getPackages() {
-        return packages;
+    public int getIdPackages() {
+        return idPackages;
     }
 
-    public void setPackages(Packages packages) {
-        this.packages = packages;
+    public void setIdPackages(int idPackages) {
+        this.idPackages = idPackages;
     }
 
     public String getName() {

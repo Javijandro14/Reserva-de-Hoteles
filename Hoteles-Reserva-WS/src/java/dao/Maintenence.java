@@ -88,7 +88,7 @@ public class Maintenence {
             while (rs.next()) {
                 employee = new Employee();
                 employee.setIdEmployee(rs.getInt(""));
-                employee.setRole(rs.getString(""));
+                employee.setRole(security.getRole(rs.getInt("")));
                 employee.setDateCrea(rs.getString(""));
                 employee.setDateMod(rs.getString(""));
                 employee.setActive(rs.getInt("") == 1);
@@ -162,28 +162,28 @@ public class Maintenence {
 
     public List<Person> getLstPerson() {
         List<Person> lstPerson = new ArrayList<>();
-        query = "";
+        query = "SELECT 1 AS IDPERSON,'' AS FNAME,'' AS SNAME,'' AS ONAME,'' AS FSURNAME,'' AS SSURNAME,'' AS MSURNAME,'' AS DOB,'' AS GENDER,'' AS IDNO,'' AS PHONE,'' AS EMAIL,'' AS ETHNICITY,FORMAT(SYSDATETIME(),'YYYY-MM-DD HH:MM:ss') AS DATECREA,FORMAT(SYSDATETIME(),'YYYY-MM-DD HH:MM:ss') AS DATEMOD, 1 AS ACTIVE";
         try {
             con.open();
             rs = con.exexuteQuery(query);
             while (rs.next()) {
                 person = new Person();
-                person.setIdPerson(rs.getInt(""));
-                person.setfName(rs.getString(""));
-                person.setsName(rs.getString(""));
-                person.setoName(rs.getString(""));
-                person.setfSurname(rs.getString(""));
-                person.setsSurname(rs.getString(""));
-                person.setmSurname(rs.getString(""));
-                person.setDob(rs.getString(""));
-                person.setGender(rs.getString(""));
-                person.setIdNo(rs.getString(""));
-                person.setPhone(rs.getString(""));
-                person.setEmail(rs.getString(""));
-                person.setEthnicity(rs.getString(""));
-                person.setDateCrea(rs.getString(""));
-                person.setDateMod(rs.getString(""));
-                person.setActive(rs.getInt("") == 1);
+                person.setIdPerson(rs.getInt("IDPERSON"));
+                person.setfName(rs.getString("FNAME"));
+                person.setsName(rs.getString("SNAME"));
+                person.setoName(rs.getString("ONAME"));
+                person.setfSurname(rs.getString("FSURNAME"));
+                person.setsSurname(rs.getString("SSURNAME"));
+                person.setmSurname(rs.getString("MSURNAME"));
+                person.setDob(rs.getString("DOB"));
+                person.setGender(rs.getString("GENDER"));
+                person.setIdNo(rs.getString("IDNO"));
+                person.setPhone(rs.getString("PHONE"));
+                person.setEmail(rs.getString("EMAIL"));
+                person.setEthnicity(rs.getString("ETHNICITY"));
+                person.setDateCrea(rs.getString("DATECREA"));
+                person.setDateMod(rs.getString("DATEMOD"));
+                person.setActive(rs.getInt("ACTIVE") == 1);
                 lstPerson.add(person);
             }
             rs.close();

@@ -13,7 +13,7 @@ public class ConnectionBD {
     private PreparedStatement ps = null;
     private Connection con = null;
     private ResultSet rs = null;
-    String database = "ReservaHoteles", urlDB = "jdbc:sqlserver://JAVIER\\SQLEXPRESS\\:1433;databasename="+database, userDB = "", passDB = "", driver = "";
+    String database = "ReservaHoteles", urlDB = "jdbc:sqlserver://JAVIER\\\\\\\\SQLEXPRESS\\\\\\\\:1433;databaseName="+database, userDB = "sa", passDB = "12345", driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 
     public Connection open() throws ClassNotFoundException {
         Class.forName(driver);

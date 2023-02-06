@@ -4,7 +4,7 @@ public class Restaurant {
     private int idRestaurant;
     private String name, startTime, endTime, dateCrea, dateMod;
     private Boolean active;
-    private Area area;
+    private int idArea;
 
     public int getIdRestaurant() {
         return idRestaurant;
@@ -62,13 +62,13 @@ public class Restaurant {
         this.active = active;
     }
 
-    public Area getArea() {
-        return area;
+    public int getIdArea() {
+        return idArea;
     }
 
-    public void setArea(Area area) {
-        this.area = area;
+    public void setIdArea(int idArea) {
+        this.idArea = idArea;
     }
-    
+
     
 }

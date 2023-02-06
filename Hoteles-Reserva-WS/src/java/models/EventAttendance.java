@@ -1,26 +1,24 @@
 package models;
 
-import java.util.List;
-
 public class EventAttendance {
-    private Events event;
-    private List<Client> lstClient;
 
-    public Events getEvent() {
-        return event;
+    private int idEvents;
+    private int idClient;
+
+    public int getIdEvents() {
+        return idEvents;
     }
 
-    public void setEvent(Events event) {
-        this.event = event;
+    public void setIdEvents(int idEvents) {
+        this.idEvents = idEvents;
     }
 
-    public List<Client> getLstClient() {
-        return lstClient;
+    public int getIdClient() {
+        return idClient;
     }
 
-    public void setLstClient(List<Client> lstClient) {
-        this.lstClient = lstClient;
+    public void setIdClient(int idClient) {
+        this.idClient = idClient;
     }
-    
-    
+
 }

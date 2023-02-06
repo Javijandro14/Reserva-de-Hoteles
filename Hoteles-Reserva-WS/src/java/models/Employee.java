@@ -2,18 +2,9 @@ package models;
 
 
 public class Employee{
-    private Users user;
-    private int idEmployee;
+    private int idEmployee, idRole, idUser;
     private boolean active;
-    private String role, dateCrea, dateMod;
-
-    public Users getUser() {
-        return user;
-    }
-
-    public void setUser(Users user) {
-        this.user = user;
-    }
+    private String  dateCrea, dateMod;
 
     public int getIdEmployee() {
         return idEmployee;
@@ -23,20 +14,28 @@ public class Employee{
         this.idEmployee = idEmployee;
     }
 
+    public int getIdRole() {
+        return idRole;
+    }
+
+    public void setIdRole(int idRole) {
+        this.idRole = idRole;
+    }
+
+    public int getIdUser() {
+        return idUser;
+    }
+
+    public void setIdUser(int idUser) {
+        this.idUser = idUser;
+    }
+
     public boolean isActive() {
         return active;
     }
 
     public void setActive(boolean active) {
         this.active = active;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
     }
 
     public String getDateCrea() {
@@ -55,5 +54,6 @@ public class Employee{
         this.dateMod = dateMod;
     }
     
+
     
 }
