@@ -1,16 +1,16 @@
 package models;
 
-public class PackageInfo {
-    private Packages packages;
+public class RoomItems {
+    private Room room;
     private String name;
     private Boolean active;
 
-    public Packages getPackages() {
-        return packages;
+    public Room getRoom() {
+        return room;
     }
 
-    public void setPackages(Packages packages) {
-        this.packages = packages;
+    public void setRoom(Room room) {
+        this.room = room;
     }
 
     public String getName() {

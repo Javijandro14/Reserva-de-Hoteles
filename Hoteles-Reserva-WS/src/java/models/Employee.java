@@ -1,16 +1,17 @@
 package models;
 
+
 public class Employee{
-    private User user;
+    private Users user;
     private int idEmployee;
     private boolean active;
     private String role, dateCrea, dateMod;
 
-    public User getUser() {
+    public Users getUser() {
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUser(Users user) {
         this.user = user;
     }
 

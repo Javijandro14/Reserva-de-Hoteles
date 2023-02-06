@@ -1,16 +1,16 @@
 package models;
 
 public class Client {
-    private User user;
+    private Users user;
     private boolean active;
     private int idClient;
     private String dateCrea, dateMod;
 
-    public User getUser() {
+    public Users getUser() {
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUser(Users user) {
         this.user = user;
     }
 

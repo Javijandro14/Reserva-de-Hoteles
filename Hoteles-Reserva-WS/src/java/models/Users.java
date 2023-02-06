@@ -1,6 +1,7 @@
 package models;
 
-public class User{
+
+public class Users {
     private Person person;
     private int idUser;
     private String username, pass, type, dateCrea, dateMod;
@@ -46,14 +47,6 @@ public class User{
         this.type = type;
     }
 
-    public boolean isActive() {
-        return active;
-    }
-
-    public void setActive(boolean active) {
-        this.active = active;
-    }
-
     public String getDateCrea() {
         return dateCrea;
     }
@@ -69,5 +62,14 @@ public class User{
     public void setDateMod(String dateMod) {
         this.dateMod = dateMod;
     }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+    
     
 }

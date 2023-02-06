@@ -15,7 +15,8 @@ public class Maintenence {
     Employee employee;
     Events events;
     Food food;
-    Package packages;
+    Packages packages;
+    PackageInfo packageInfo;
     Person person;
     Purchase purchase;
     PurchaseInfo purchaseInfo;
@@ -140,14 +141,14 @@ public class Maintenence {
         return lstFood;
     }
 
-    public List<Package> getLstPackages() {
-        List<Package> lstPackages = new ArrayList<>();
+    public List<Packages> getLstPackages() {
+        List<Packages> lstPackages = new ArrayList<>();
         query = "";
         try {
             con.open();
             rs = con.exexuteQuery(query);
             while (rs.next()) {
-                packages = new Package();
+                packages = new Packages();
 
                 lstPackages.add(packages);
             }
@@ -348,7 +349,7 @@ public class Maintenence {
         return res;
     }
 
-    public boolean createPackages(Package packages) {
+    public boolean createPackages(Packages packages) {
         try {
             query = "";
             con.open();
@@ -440,7 +441,7 @@ public class Maintenence {
         return food;
     }
 
-    public Package getPackages(int idPackages) {
+    public Packages getPackages(int idPackages) {
         return packages;
     }
 
@@ -524,7 +525,7 @@ public class Maintenence {
         return res;
     }
 
-    public boolean updatePackages(Package packages) {
+    public boolean updatePackages(Packages packages) {
         try {
             query = "";
             con.open();
@@ -663,7 +664,7 @@ public class Maintenence {
         }
         return res;
     }
-    public boolean deletePackages(Package packages) {
+    public boolean deletePackages(Packages packages) {
         try {
             query = "";
             con.open();

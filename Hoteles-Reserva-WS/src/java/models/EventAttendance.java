@@ -1,14 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package models;
 
-/**
- *
- * @author javie
- */
+import java.util.List;
+
 public class EventAttendance {
+    private Events event;
+    private List<Client> lstClient;
+
+    public Events getEvent() {
+        return event;
+    }
+
+    public void setEvent(Events event) {
+        this.event = event;
+    }
+
+    public List<Client> getLstClient() {
+        return lstClient;
+    }
+
+    public void setLstClient(List<Client> lstClient) {
+        this.lstClient = lstClient;
+    }
+    
     
 }

@@ -10,7 +10,7 @@ import models.*;
 
 public class Security {
 
-    User user;
+    Users user;
     Module module;
     Permissions permissions;
     Role role;
@@ -22,27 +22,28 @@ public class Security {
     ResultSet rs = null;
     boolean res = false;
 
-    public List<User> getLstUser() {
-        List<User> lstUser = new ArrayList<>();
-        query = "";
+    public List<Users> getLstUser() {
+        List<Users> lstUser = new ArrayList<>();
+        query = "SELECT * FROM USER";
         try {
             con.open();
             rs = con.exexuteQuery(query);
             while (rs.next()) {
-                user = new User();
-                user.setIdUser(rs.getInt(""));
-                user.setUsername(rs.getString(""));
-                user.setPass(rs.getString(""));
-                user.setType(rs.getString(""));
-                user.setDateCrea(rs.getString(""));
-                user.setDateMod(rs.getString(""));
-                user.setActive(rs.getInt("") == 1);
-                user.setPerson(maintenence.getPerson(rs.getInt("")));
+                user = new Users();
+                /*user.setIdUser(rs.getInt("IDUSER"));
+                user.setUsername(rs.getString("USERNAME"));
+                user.setPass(rs.getString("PASSWD"));
+                user.setType(rs.getString("TYPE"));
+                user.setDateCrea(rs.getString("CREATION_DATE"));
+                user.setDateMod(rs.getString("MODIFICATION_DATE"));
+                user.setActive(rs.getInt("ACTIVE") == 1);
+                user.setPerson(maintenence.getPerson(rs.getInt("IDPERSON")));*/
                 lstUser.add(user);
             }
             rs.close();
             con.close();
         } catch (Exception ex) {
+            //System.out.println("Error getting userlist");
             Logger.getLogger(Security.class.getName()).log(Level.SEVERE, null, ex);
         }
         return lstUser;
@@ -106,7 +107,7 @@ public class Security {
         return lstRole;
     }
 
-    public boolean createUser(User user) {
+    public boolean createUser(Users user) {
         try {
             query = "";
             con.open();
@@ -154,12 +155,12 @@ public class Security {
         return res;
     }
 
-    public User getUser(int idUser) {
+    public Users getUser(int idUser) {
         query = "";
         try {
             con.open();
             rs = con.exexuteQuery(query);
-            user = new User();
+            user = new Users();
             user.setIdUser(rs.getInt(""));
             user.setUsername(rs.getString(""));
             user.setPass(rs.getString(""));
@@ -221,7 +222,7 @@ public class Security {
         return role;
     }
 
-    public boolean updateUser(User user) {
+    public boolean updateUser(Users user) {
         try {
             query = "";
             con.open();
@@ -269,7 +270,7 @@ public class Security {
         return res;
     }
 
-    public boolean deleteUser(User user) {
+    public boolean deleteUser(Users user) {
         try {
             query = "";
             con.open();
