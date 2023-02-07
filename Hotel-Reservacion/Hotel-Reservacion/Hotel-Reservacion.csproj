@@ -44,6 +44,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,19 +69,533 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.area.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.client.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.createAreaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.createClientResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.createEmployeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.createEventsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.createFoodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.createPackagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.createPersonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.createPurchaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.createReservationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.createRestaurantResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.createRoomResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.deleteAreaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.deleteClientResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.deleteEmployeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.deleteEventsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.deleteFoodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.deletePackagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.deletePersonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.deletePurchaseInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.deletePurchaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.deleteReservationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.deleteRestaurantResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.deleteRoomResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.employee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.events.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.food.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getAreaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getClientResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getEmployeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getEventsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getFoodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getLstAreaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getLstClientResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getLstEmployeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getLstEventsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getLstFoodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getLstPackagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getLstPersonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getLstPurchaseInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getLstPurchaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getLstReservationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getLstRestaurantResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getLstRoomResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getPackagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getPersonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getPurchaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getReservationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getRestaurantResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.getRoomResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.packages.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.person.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.purchase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.purchaseInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.reservation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.restaurant.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.room.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.updateAreaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.updateClientResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.updateEmployeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.updateEventsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.updateFoodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.updatePackagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.updatePersonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.updatePurchaseInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.updatePurchaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.updateReservationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.updateRestaurantResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.updateRoomResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\WebMaintenence\MaintenenceWS.wsdl" />
+    <None Include="Connected Services\WebMaintenence\MaintenenceWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\WebOrders\Hotel_Reservacion.WebOrders.helloResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\WebOrders\OrdersWS.wsdl" />
+    <None Include="Connected Services\WebOrders\OrdersWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\WebProcess\Hotel_Reservacion.WebProcess.helloResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\WebProcess\ProcessWS.wsdl" />
+    <None Include="Connected Services\WebProcess\ProcessWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\WebReports\Hotel_Reservacion.WebReports.helloResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\WebReports\ReportsWS.wsdl" />
+    <None Include="Connected Services\WebReports\ReportsWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WebSecurity\configuration91.svcinfo" />
+    <None Include="Connected Services\WebSecurity\configuration.svcinfo" />
+    <None Include="Connected Services\WebMaintenence\configuration91.svcinfo" />
+    <None Include="Connected Services\WebMaintenence\configuration.svcinfo" />
+    <None Include="Connected Services\WebMaintenence\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\WebOrders\configuration91.svcinfo" />
+    <None Include="Connected Services\WebOrders\configuration.svcinfo" />
+    <None Include="Connected Services\WebOrders\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\WebProcess\configuration91.svcinfo" />
+    <None Include="Connected Services\WebProcess\configuration.svcinfo" />
+    <None Include="Connected Services\WebProcess\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\WebReports\configuration91.svcinfo" />
+    <None Include="Connected Services\WebReports\configuration.svcinfo" />
+    <None Include="Connected Services\WebReports\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.createModuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.createPermissionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.createRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.createUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.deleteModuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.deletePermissionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.deleteRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.deleteUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.getLstModuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.getLstPermissionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.getLstRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.getLstUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.getModuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.getPermissionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.getRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.getUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.module.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.permissions.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.role.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.updateModuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.updatePermissionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.updateRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.updateUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebSecurity\Hotel_Reservacion.WebSecurity.user.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\WebSecurity\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Default.aspx" />
+    <Content Include="Fonts\fontawesome-webfont.svg" />
+    <Content Include="Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\5.jpg" />
+    <Content Include="Images\a1.jpg" />
+    <Content Include="Images\about.jpg" />
+    <Content Include="Images\AquaHeader.jpg" />
+    <Content Include="Images\arr.png" />
+    <Content Include="Images\BlackGlassHeader.jpg" />
+    <Content Include="Images\borrar.png" />
+    <Content Include="Images\c-arrows.png" />
+    <Content Include="Images\c1.jpg" />
+    <Content Include="Images\c2.jpg" />
+    <Content Include="Images\c3.jpg" />
+    <Content Include="Images\c4.jpg" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\contact.jpg" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\g1.jpg" />
+    <Content Include="Images\g10.jpg" />
+    <Content Include="Images\g2.jpg" />
+    <Content Include="Images\g3.jpg" />
+    <Content Include="Images\g4.jpg" />
+    <Content Include="Images\g5.jpg" />
+    <Content Include="Images\g6.jpg" />
+    <Content Include="Images\g7.jpg" />
+    <Content Include="Images\g8.jpg" />
+    <Content Include="Images\g9.jpg" />
+    <Content Include="Images\GlassHeader.jpg" />
+    <Content Include="Images\icons.svg" />
+    <Content Include="Images\image.png" />
+    <Content Include="Images\loading2.gif" />
+    <Content Include="Images\new.png" />
+    <Content Include="Images\PlasticBlueHeader.jpg" />
+    <Content Include="Images\r1.jpg" />
+    <Content Include="Images\r2.jpg" />
+    <Content Include="Images\r3.jpg" />
+    <Content Include="Images\r4.jpg" />
+    <Content Include="Images\RedWineHeader.jpg" />
+    <Content Include="Images\services.jpg" />
+    <Content Include="Images\sun.png" />
+    <Content Include="Images\teamb1.jpg" />
+    <Content Include="Images\teamb2.jpg" />
+    <Content Include="Images\teamb3.jpg" />
+    <Content Include="Images\teamb4.jpg" />
+    <Content Include="Images\teams1.jpg" />
+    <Content Include="Images\teams2.jpg" />
+    <Content Include="Images\teams3.jpg" />
+    <Content Include="Images\teams4.jpg" />
+    <Content Include="Images\user.jpg" />
+    <Content Include="Images\working.gif" />
+    <Content Include="Scripts\bootstrap-3.1.1.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\easing.js" />
+    <Content Include="Scripts\easy-responsive-tabs.js" />
+    <Content Include="Scripts\jqBootstrapValidation.js" />
+    <Content Include="Main.Master" />
+    <None Include="Scripts\jquery-1.9.0.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.0.js" />
+    <Content Include="Scripts\jquery-1.9.0.min.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery.flexslider.js" />
+    <Content Include="Scripts\jquery.swipebox.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\modernizr-2.6.2.min.js" />
+    <Content Include="Scripts\move-top.js" />
+    <Content Include="Scripts\responsiveslides.min.js" />
+    <Content Include="Scripts\scripts.js" />
+    <Content Include="Styles\bootstrap-theme.css" />
+    <Content Include="Styles\bootstrap-theme.min.css" />
+    <Content Include="Styles\bootstrap.css" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\chocolat.css" />
+    <Content Include="Styles\common.css" />
+    <Content Include="Styles\easy-responsive-tabs.css" />
+    <Content Include="Styles\flexslider.css" />
+    <Content Include="Styles\font-awesome.css" />
+    <Content Include="Styles\jquery-ui.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Styles\StyleWebFactura.css" />
+    <Content Include="Styles\StyleWebForm.css" />
+    <Content Include="Styles\swipebox.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\WebMaintenence\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WebOrders\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WebProcess\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WebReports\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WebSecurity\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\EventAttendance.cs" />
+    <Compile Include="Models\Events.cs" />
+    <Compile Include="Models\Food.cs" />
+    <Compile Include="Models\Meal.cs" />
+    <Compile Include="Models\MealInfo.cs" />
+    <Compile Include="Models\Module.cs" />
+    <Compile Include="Models\PackageInfo.cs" />
+    <Compile Include="Models\Packages.cs" />
+    <Compile Include="Models\Permissions.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Purchase.cs" />
+    <Compile Include="Models\PurchaseInfo.cs" />
+    <Compile Include="Models\Reservation.cs" />
+    <Compile Include="Models\Restaurant.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\Room.cs" />
+    <Compile Include="Models\RoomItems.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Area.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\ClsErrorHandler.cs" />
+    <Compile Include="Utilities\WebServices.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\WebSecurity\SecurityWS.wsdl" />
+    <None Include="Connected Services\WebSecurity\SecurityWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Fonts\fontawesome-webfont.eot" />
+    <Content Include="Fonts\fontawesome-webfont.ttf" />
+    <Content Include="Fonts\fontawesome-webfont.woff" />
+    <Content Include="Fonts\fontawesome-webfont.woff2" />
+    <Content Include="Fonts\FontAwesome.otf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff2" />
     <None Include="packages.config" />
+    <Content Include="Scripts\jquery-1.9.0.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\WebMaintenence\" />
+    <WCFMetadataStorage Include="Connected Services\WebOrders\" />
+    <WCFMetadataStorage Include="Connected Services\WebProcess\" />
+    <WCFMetadataStorage Include="Connected Services\WebReports\" />
+    <WCFMetadataStorage Include="Connected Services\WebSecurity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebForms\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

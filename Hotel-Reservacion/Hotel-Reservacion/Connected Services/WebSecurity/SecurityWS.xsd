@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://webservices/" targetNamespace="http://webservices/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="createModule" type="tns:createModule" />
+  <xs:element name="createModuleResponse" type="tns:createModuleResponse" />
+  <xs:element name="createPermissions" type="tns:createPermissions" />
+  <xs:element name="createPermissionsResponse" type="tns:createPermissionsResponse" />
+  <xs:element name="createRole" type="tns:createRole" />
+  <xs:element name="createRoleResponse" type="tns:createRoleResponse" />
+  <xs:element name="createUser" type="tns:createUser" />
+  <xs:element name="createUserResponse" type="tns:createUserResponse" />
+  <xs:element name="deleteModule" type="tns:deleteModule" />
+  <xs:element name="deleteModuleResponse" type="tns:deleteModuleResponse" />
+  <xs:element name="deletePermissions" type="tns:deletePermissions" />
+  <xs:element name="deletePermissionsResponse" type="tns:deletePermissionsResponse" />
+  <xs:element name="deleteRole" type="tns:deleteRole" />
+  <xs:element name="deleteRoleResponse" type="tns:deleteRoleResponse" />
+  <xs:element name="deleteUser" type="tns:deleteUser" />
+  <xs:element name="deleteUserResponse" type="tns:deleteUserResponse" />
+  <xs:element name="getLstModule" type="tns:getLstModule" />
+  <xs:element name="getLstModuleResponse" type="tns:getLstModuleResponse" />
+  <xs:element name="getLstPermissions" type="tns:getLstPermissions" />
+  <xs:element name="getLstPermissionsResponse" type="tns:getLstPermissionsResponse" />
+  <xs:element name="getLstRole" type="tns:getLstRole" />
+  <xs:element name="getLstRoleResponse" type="tns:getLstRoleResponse" />
+  <xs:element name="getLstUser" type="tns:getLstUser" />
+  <xs:element name="getLstUserResponse" type="tns:getLstUserResponse" />
+  <xs:element name="getModule" type="tns:getModule" />
+  <xs:element name="getModuleResponse" type="tns:getModuleResponse" />
+  <xs:element name="getPermissions" type="tns:getPermissions" />
+  <xs:element name="getPermissionsResponse" type="tns:getPermissionsResponse" />
+  <xs:element name="getRole" type="tns:getRole" />
+  <xs:element name="getRoleResponse" type="tns:getRoleResponse" />
+  <xs:element name="getUser" type="tns:getUser" />
+  <xs:element name="getUserResponse" type="tns:getUserResponse" />
+  <xs:element name="updateModule" type="tns:updateModule" />
+  <xs:element name="updateModuleResponse" type="tns:updateModuleResponse" />
+  <xs:element name="updatePermissions" type="tns:updatePermissions" />
+  <xs:element name="updatePermissionsResponse" type="tns:updatePermissionsResponse" />
+  <xs:element name="updateRole" type="tns:updateRole" />
+  <xs:element name="updateRoleResponse" type="tns:updateRoleResponse" />
+  <xs:element name="updateUser" type="tns:updateUser" />
+  <xs:element name="updateUserResponse" type="tns:updateUserResponse" />
+  <xs:complexType name="getLstUser">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstUserResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:user" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="user">
+    <xs:sequence>
+      <xs:element name="active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="dateCrea" type="xs:string" />
+      <xs:element minOccurs="0" name="dateMod" type="xs:string" />
+      <xs:element name="idPerson" type="xs:int" />
+      <xs:element name="idUser" type="xs:int" />
+      <xs:element minOccurs="0" name="pass" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstModule">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstModuleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:module" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="module">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="dateCrea" type="xs:string" />
+      <xs:element minOccurs="0" name="dateMod" type="xs:string" />
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element name="idFatherModule" type="xs:int" />
+      <xs:element name="idModule" type="xs:int" />
+      <xs:element minOccurs="0" name="level" type="xs:string" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="order" type="xs:string" />
+      <xs:element minOccurs="0" name="path" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deletePermissions">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:permissions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="permissions">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="dateCrea" type="xs:string" />
+      <xs:element minOccurs="0" name="dateMod" type="xs:string" />
+      <xs:element name="idModule" type="xs:int" />
+      <xs:element name="idPermission" type="xs:int" />
+      <xs:element name="idRole" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deletePermissionsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateModule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:module" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateModuleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePermissions">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:permissions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePermissionsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteModule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:module" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteModuleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:user" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstRole">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstRoleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:role" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="role">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="dateCrea" type="xs:string" />
+      <xs:element minOccurs="0" name="dateMod" type="xs:string" />
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element name="idRole" type="xs:int" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:user" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createPermissions">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:permissions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createPermissionsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPermissions">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPermissionsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:permissions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getUser">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getUserResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:user" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:role" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateRoleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getModule">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getModuleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:module" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstPermissions">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstPermissionsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:permissions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:role" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteRoleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createModule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:module" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createModuleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRole">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRoleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:role" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:role" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createRoleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:user" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

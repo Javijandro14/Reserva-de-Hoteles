@@ -68,7 +68,7 @@ public class Maintenence {
                 client.setDateCrea(rs.getString(""));
                 client.setDateMod(rs.getString(""));
                 client.setActive(rs.getInt("") == 1);
-                client.setUser(security.getUser(rs.getInt("")));
+                client.setIdUser(rs.getInt(""));
                 lstClient.add(client);
             }
             rs.close();
@@ -88,11 +88,11 @@ public class Maintenence {
             while (rs.next()) {
                 employee = new Employee();
                 employee.setIdEmployee(rs.getInt(""));
-                employee.setRole(security.getRole(rs.getInt("")));
+                employee.setIdRole(rs.getInt(""));
                 employee.setDateCrea(rs.getString(""));
                 employee.setDateMod(rs.getString(""));
                 employee.setActive(rs.getInt("") == 1);
-                employee.setUser(security.getUser(rs.getInt("")));
+                employee.setIdUser(rs.getInt(""));
                 lstEmployee.add(employee);
             }
             rs.close();

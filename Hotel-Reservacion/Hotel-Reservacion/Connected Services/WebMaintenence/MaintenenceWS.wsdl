@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="MaintenenceWS" targetNamespace="http://webservices/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/Hoteles-Reserva-WS/MaintenenceWS?xsd=1" namespace="http://webservices/" />
+    </xsd:schema>
+  </types>
+  <message name="getPackages">
+    <part name="parameters" element="tns:getPackages" />
+  </message>
+  <message name="getPackagesResponse">
+    <part name="parameters" element="tns:getPackagesResponse" />
+  </message>
+  <message name="getClient">
+    <part name="parameters" element="tns:getClient" />
+  </message>
+  <message name="getClientResponse">
+    <part name="parameters" element="tns:getClientResponse" />
+  </message>
+  <message name="createClient">
+    <part name="parameters" element="tns:createClient" />
+  </message>
+  <message name="createClientResponse">
+    <part name="parameters" element="tns:createClientResponse" />
+  </message>
+  <message name="getLstPurchaseInfo">
+    <part name="parameters" element="tns:getLstPurchaseInfo" />
+  </message>
+  <message name="getLstPurchaseInfoResponse">
+    <part name="parameters" element="tns:getLstPurchaseInfoResponse" />
+  </message>
+  <message name="createReservation">
+    <part name="parameters" element="tns:createReservation" />
+  </message>
+  <message name="createReservationResponse">
+    <part name="parameters" element="tns:createReservationResponse" />
+  </message>
+  <message name="updateReservation">
+    <part name="parameters" element="tns:updateReservation" />
+  </message>
+  <message name="updateReservationResponse">
+    <part name="parameters" element="tns:updateReservationResponse" />
+  </message>
+  <message name="deletePurchaseInfo">
+    <part name="parameters" element="tns:deletePurchaseInfo" />
+  </message>
+  <message name="deletePurchaseInfoResponse">
+    <part name="parameters" element="tns:deletePurchaseInfoResponse" />
+  </message>
+  <message name="updatePurchaseInfo">
+    <part name="parameters" element="tns:updatePurchaseInfo" />
+  </message>
+  <message name="updatePurchaseInfoResponse">
+    <part name="parameters" element="tns:updatePurchaseInfoResponse" />
+  </message>
+  <message name="getLstReservation">
+    <part name="parameters" element="tns:getLstReservation" />
+  </message>
+  <message name="getLstReservationResponse">
+    <part name="parameters" element="tns:getLstReservationResponse" />
+  </message>
+  <message name="deleteReservation">
+    <part name="parameters" element="tns:deleteReservation" />
+  </message>
+  <message name="deleteReservationResponse">
+    <part name="parameters" element="tns:deleteReservationResponse" />
+  </message>
+  <message name="getLstEvents">
+    <part name="parameters" element="tns:getLstEvents" />
+  </message>
+  <message name="getLstEventsResponse">
+    <part name="parameters" element="tns:getLstEventsResponse" />
+  </message>
+  <message name="createPerson">
+    <part name="parameters" element="tns:createPerson" />
+  </message>
+  <message name="createPersonResponse">
+    <part name="parameters" element="tns:createPersonResponse" />
+  </message>
+  <message name="createFood">
+    <part name="parameters" element="tns:createFood" />
+  </message>
+  <message name="createFoodResponse">
+    <part name="parameters" element="tns:createFoodResponse" />
+  </message>
+  <message name="createRoom">
+    <part name="parameters" element="tns:createRoom" />
+  </message>
+  <message name="createRoomResponse">
+    <part name="parameters" element="tns:createRoomResponse" />
+  </message>
+  <message name="createRestaurant">
+    <part name="parameters" element="tns:createRestaurant" />
+  </message>
+  <message name="createRestaurantResponse">
+    <part name="parameters" element="tns:createRestaurantResponse" />
+  </message>
+  <message name="createPackages">
+    <part name="parameters" element="tns:createPackages" />
+  </message>
+  <message name="createPackagesResponse">
+    <part name="parameters" element="tns:createPackagesResponse" />
+  </message>
+  <message name="createEmployee">
+    <part name="parameters" element="tns:createEmployee" />
+  </message>
+  <message name="createEmployeeResponse">
+    <part name="parameters" element="tns:createEmployeeResponse" />
+  </message>
+  <message name="createPurchase">
+    <part name="parameters" element="tns:createPurchase" />
+  </message>
+  <message name="createPurchaseResponse">
+    <part name="parameters" element="tns:createPurchaseResponse" />
+  </message>
+  <message name="getLstPackages">
+    <part name="parameters" element="tns:getLstPackages" />
+  </message>
+  <message name="getLstPackagesResponse">
+    <part name="parameters" element="tns:getLstPackagesResponse" />
+  </message>
+  <message name="getLstFood">
+    <part name="parameters" element="tns:getLstFood" />
+  </message>
+  <message name="getLstFoodResponse">
+    <part name="parameters" element="tns:getLstFoodResponse" />
+  </message>
+  <message name="getLstRestaurant">
+    <part name="parameters" element="tns:getLstRestaurant" />
+  </message>
+  <message name="getLstRestaurantResponse">
+    <part name="parameters" element="tns:getLstRestaurantResponse" />
+  </message>
+  <message name="getLstRoom">
+    <part name="parameters" element="tns:getLstRoom" />
+  </message>
+  <message name="getLstRoomResponse">
+    <part name="parameters" element="tns:getLstRoomResponse" />
+  </message>
+  <message name="getArea">
+    <part name="parameters" element="tns:getArea" />
+  </message>
+  <message name="getAreaResponse">
+    <part name="parameters" element="tns:getAreaResponse" />
+  </message>
+  <message name="getLstPerson">
+    <part name="parameters" element="tns:getLstPerson" />
+  </message>
+  <message name="getLstPersonResponse">
+    <part name="parameters" element="tns:getLstPersonResponse" />
+  </message>
+  <message name="getLstArea">
+    <part name="parameters" element="tns:getLstArea" />
+  </message>
+  <message name="getLstAreaResponse">
+    <part name="parameters" element="tns:getLstAreaResponse" />
+  </message>
+  <message name="getLstClient">
+    <part name="parameters" element="tns:getLstClient" />
+  </message>
+  <message name="getLstClientResponse">
+    <part name="parameters" element="tns:getLstClientResponse" />
+  </message>
+  <message name="getLstPurchase">
+    <part name="parameters" element="tns:getLstPurchase" />
+  </message>
+  <message name="getLstPurchaseResponse">
+    <part name="parameters" element="tns:getLstPurchaseResponse" />
+  </message>
+  <message name="createEvents">
+    <part name="parameters" element="tns:createEvents" />
+  </message>
+  <message name="createEventsResponse">
+    <part name="parameters" element="tns:createEventsResponse" />
+  </message>
+  <message name="getLstEmployee">
+    <part name="parameters" element="tns:getLstEmployee" />
+  </message>
+  <message name="getLstEmployeeResponse">
+    <part name="parameters" element="tns:getLstEmployeeResponse" />
+  </message>
+  <message name="createArea">
+    <part name="parameters" element="tns:createArea" />
+  </message>
+  <message name="createAreaResponse">
+    <part name="parameters" element="tns:createAreaResponse" />
+  </message>
+  <message name="updatePerson">
+    <part name="parameters" element="tns:updatePerson" />
+  </message>
+  <message name="updatePersonResponse">
+    <part name="parameters" element="tns:updatePersonResponse" />
+  </message>
+  <message name="deletePackages">
+    <part name="parameters" element="tns:deletePackages" />
+  </message>
+  <message name="deletePackagesResponse">
+    <part name="parameters" element="tns:deletePackagesResponse" />
+  </message>
+  <message name="getReservation">
+    <part name="parameters" element="tns:getReservation" />
+  </message>
+  <message name="getReservationResponse">
+    <part name="parameters" element="tns:getReservationResponse" />
+  </message>
+  <message name="deleteEvents">
+    <part name="parameters" element="tns:deleteEvents" />
+  </message>
+  <message name="deleteEventsResponse">
+    <part name="parameters" element="tns:deleteEventsResponse" />
+  </message>
+  <message name="getRoom">
+    <part name="parameters" element="tns:getRoom" />
+  </message>
+  <message name="getRoomResponse">
+    <part name="parameters" element="tns:getRoomResponse" />
+  </message>
+  <message name="getRestaurant">
+    <part name="parameters" element="tns:getRestaurant" />
+  </message>
+  <message name="getRestaurantResponse">
+    <part name="parameters" element="tns:getRestaurantResponse" />
+  </message>
+  <message name="deleteArea">
+    <part name="parameters" element="tns:deleteArea" />
+  </message>
+  <message name="deleteAreaResponse">
+    <part name="parameters" element="tns:deleteAreaResponse" />
+  </message>
+  <message name="updateEmployee">
+    <part name="parameters" element="tns:updateEmployee" />
+  </message>
+  <message name="updateEmployeeResponse">
+    <part name="parameters" element="tns:updateEmployeeResponse" />
+  </message>
+  <message name="updateArea">
+    <part name="parameters" element="tns:updateArea" />
+  </message>
+  <message name="updateAreaResponse">
+    <part name="parameters" element="tns:updateAreaResponse" />
+  </message>
+  <message name="updateFood">
+    <part name="parameters" element="tns:updateFood" />
+  </message>
+  <message name="updateFoodResponse">
+    <part name="parameters" element="tns:updateFoodResponse" />
+  </message>
+  <message name="updatePackages">
+    <part name="parameters" element="tns:updatePackages" />
+  </message>
+  <message name="updatePackagesResponse">
+    <part name="parameters" element="tns:updatePackagesResponse" />
+  </message>
+  <message name="getPerson">
+    <part name="parameters" element="tns:getPerson" />
+  </message>
+  <message name="getPersonResponse">
+    <part name="parameters" element="tns:getPersonResponse" />
+  </message>
+  <message name="updateEvents">
+    <part name="parameters" element="tns:updateEvents" />
+  </message>
+  <message name="updateEventsResponse">
+    <part name="parameters" element="tns:updateEventsResponse" />
+  </message>
+  <message name="updateRoom">
+    <part name="parameters" element="tns:updateRoom" />
+  </message>
+  <message name="updateRoomResponse">
+    <part name="parameters" element="tns:updateRoomResponse" />
+  </message>
+  <message name="deletePurchase">
+    <part name="parameters" element="tns:deletePurchase" />
+  </message>
+  <message name="deletePurchaseResponse">
+    <part name="parameters" element="tns:deletePurchaseResponse" />
+  </message>
+  <message name="updateRestaurant">
+    <part name="parameters" element="tns:updateRestaurant" />
+  </message>
+  <message name="updateRestaurantResponse">
+    <part name="parameters" element="tns:updateRestaurantResponse" />
+  </message>
+  <message name="getPurchase">
+    <part name="parameters" element="tns:getPurchase" />
+  </message>
+  <message name="getPurchaseResponse">
+    <part name="parameters" element="tns:getPurchaseResponse" />
+  </message>
+  <message name="deletePerson">
+    <part name="parameters" element="tns:deletePerson" />
+  </message>
+  <message name="deletePersonResponse">
+    <part name="parameters" element="tns:deletePersonResponse" />
+  </message>
+  <message name="deleteRoom">
+    <part name="parameters" element="tns:deleteRoom" />
+  </message>
+  <message name="deleteRoomResponse">
+    <part name="parameters" element="tns:deleteRoomResponse" />
+  </message>
+  <message name="getFood">
+    <part name="parameters" element="tns:getFood" />
+  </message>
+  <message name="getFoodResponse">
+    <part name="parameters" element="tns:getFoodResponse" />
+  </message>
+  <message name="getEmployee">
+    <part name="parameters" element="tns:getEmployee" />
+  </message>
+  <message name="getEmployeeResponse">
+    <part name="parameters" element="tns:getEmployeeResponse" />
+  </message>
+  <message name="deleteEmployee">
+    <part name="parameters" element="tns:deleteEmployee" />
+  </message>
+  <message name="deleteEmployeeResponse">
+    <part name="parameters" element="tns:deleteEmployeeResponse" />
+  </message>
+  <message name="deleteFood">
+    <part name="parameters" element="tns:deleteFood" />
+  </message>
+  <message name="deleteFoodResponse">
+    <part name="parameters" element="tns:deleteFoodResponse" />
+  </message>
+  <message name="updateClient">
+    <part name="parameters" element="tns:updateClient" />
+  </message>
+  <message name="updateClientResponse">
+    <part name="parameters" element="tns:updateClientResponse" />
+  </message>
+  <message name="deleteRestaurant">
+    <part name="parameters" element="tns:deleteRestaurant" />
+  </message>
+  <message name="deleteRestaurantResponse">
+    <part name="parameters" element="tns:deleteRestaurantResponse" />
+  </message>
+  <message name="getEvents">
+    <part name="parameters" element="tns:getEvents" />
+  </message>
+  <message name="getEventsResponse">
+    <part name="parameters" element="tns:getEventsResponse" />
+  </message>
+  <message name="updatePurchase">
+    <part name="parameters" element="tns:updatePurchase" />
+  </message>
+  <message name="updatePurchaseResponse">
+    <part name="parameters" element="tns:updatePurchaseResponse" />
+  </message>
+  <message name="deleteClient">
+    <part name="parameters" element="tns:deleteClient" />
+  </message>
+  <message name="deleteClientResponse">
+    <part name="parameters" element="tns:deleteClientResponse" />
+  </message>
+  <portType name="MaintenenceWS">
+    <operation name="getPackages">
+      <input wsam:Action="http://webservices/MaintenenceWS/getPackagesRequest" message="tns:getPackages" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getPackagesResponse" message="tns:getPackagesResponse" />
+    </operation>
+    <operation name="getClient">
+      <input wsam:Action="http://webservices/MaintenenceWS/getClientRequest" message="tns:getClient" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getClientResponse" message="tns:getClientResponse" />
+    </operation>
+    <operation name="createClient">
+      <input wsam:Action="http://webservices/MaintenenceWS/createClientRequest" message="tns:createClient" />
+      <output wsam:Action="http://webservices/MaintenenceWS/createClientResponse" message="tns:createClientResponse" />
+    </operation>
+    <operation name="getLstPurchaseInfo">
+      <input wsam:Action="http://webservices/MaintenenceWS/getLstPurchaseInfoRequest" message="tns:getLstPurchaseInfo" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getLstPurchaseInfoResponse" message="tns:getLstPurchaseInfoResponse" />
+    </operation>
+    <operation name="createReservation">
+      <input wsam:Action="http://webservices/MaintenenceWS/createReservationRequest" message="tns:createReservation" />
+      <output wsam:Action="http://webservices/MaintenenceWS/createReservationResponse" message="tns:createReservationResponse" />
+    </operation>
+    <operation name="updateReservation">
+      <input wsam:Action="http://webservices/MaintenenceWS/updateReservationRequest" message="tns:updateReservation" />
+      <output wsam:Action="http://webservices/MaintenenceWS/updateReservationResponse" message="tns:updateReservationResponse" />
+    </operation>
+    <operation name="deletePurchaseInfo">
+      <input wsam:Action="http://webservices/MaintenenceWS/deletePurchaseInfoRequest" message="tns:deletePurchaseInfo" />
+      <output wsam:Action="http://webservices/MaintenenceWS/deletePurchaseInfoResponse" message="tns:deletePurchaseInfoResponse" />
+    </operation>
+    <operation name="updatePurchaseInfo">
+      <input wsam:Action="http://webservices/MaintenenceWS/updatePurchaseInfoRequest" message="tns:updatePurchaseInfo" />
+      <output wsam:Action="http://webservices/MaintenenceWS/updatePurchaseInfoResponse" message="tns:updatePurchaseInfoResponse" />
+    </operation>
+    <operation name="getLstReservation">
+      <input wsam:Action="http://webservices/MaintenenceWS/getLstReservationRequest" message="tns:getLstReservation" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getLstReservationResponse" message="tns:getLstReservationResponse" />
+    </operation>
+    <operation name="deleteReservation">
+      <input wsam:Action="http://webservices/MaintenenceWS/deleteReservationRequest" message="tns:deleteReservation" />
+      <output wsam:Action="http://webservices/MaintenenceWS/deleteReservationResponse" message="tns:deleteReservationResponse" />
+    </operation>
+    <operation name="getLstEvents">
+      <input wsam:Action="http://webservices/MaintenenceWS/getLstEventsRequest" message="tns:getLstEvents" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getLstEventsResponse" message="tns:getLstEventsResponse" />
+    </operation>
+    <operation name="createPerson">
+      <input wsam:Action="http://webservices/MaintenenceWS/createPersonRequest" message="tns:createPerson" />
+      <output wsam:Action="http://webservices/MaintenenceWS/createPersonResponse" message="tns:createPersonResponse" />
+    </operation>
+    <operation name="createFood">
+      <input wsam:Action="http://webservices/MaintenenceWS/createFoodRequest" message="tns:createFood" />
+      <output wsam:Action="http://webservices/MaintenenceWS/createFoodResponse" message="tns:createFoodResponse" />
+    </operation>
+    <operation name="createRoom">
+      <input wsam:Action="http://webservices/MaintenenceWS/createRoomRequest" message="tns:createRoom" />
+      <output wsam:Action="http://webservices/MaintenenceWS/createRoomResponse" message="tns:createRoomResponse" />
+    </operation>
+    <operation name="createRestaurant">
+      <input wsam:Action="http://webservices/MaintenenceWS/createRestaurantRequest" message="tns:createRestaurant" />
+      <output wsam:Action="http://webservices/MaintenenceWS/createRestaurantResponse" message="tns:createRestaurantResponse" />
+    </operation>
+    <operation name="createPackages">
+      <input wsam:Action="http://webservices/MaintenenceWS/createPackagesRequest" message="tns:createPackages" />
+      <output wsam:Action="http://webservices/MaintenenceWS/createPackagesResponse" message="tns:createPackagesResponse" />
+    </operation>
+    <operation name="createEmployee">
+      <input wsam:Action="http://webservices/MaintenenceWS/createEmployeeRequest" message="tns:createEmployee" />
+      <output wsam:Action="http://webservices/MaintenenceWS/createEmployeeResponse" message="tns:createEmployeeResponse" />
+    </operation>
+    <operation name="createPurchase">
+      <input wsam:Action="http://webservices/MaintenenceWS/createPurchaseRequest" message="tns:createPurchase" />
+      <output wsam:Action="http://webservices/MaintenenceWS/createPurchaseResponse" message="tns:createPurchaseResponse" />
+    </operation>
+    <operation name="getLstPackages">
+      <input wsam:Action="http://webservices/MaintenenceWS/getLstPackagesRequest" message="tns:getLstPackages" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getLstPackagesResponse" message="tns:getLstPackagesResponse" />
+    </operation>
+    <operation name="getLstFood">
+      <input wsam:Action="http://webservices/MaintenenceWS/getLstFoodRequest" message="tns:getLstFood" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getLstFoodResponse" message="tns:getLstFoodResponse" />
+    </operation>
+    <operation name="getLstRestaurant">
+      <input wsam:Action="http://webservices/MaintenenceWS/getLstRestaurantRequest" message="tns:getLstRestaurant" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getLstRestaurantResponse" message="tns:getLstRestaurantResponse" />
+    </operation>
+    <operation name="getLstRoom">
+      <input wsam:Action="http://webservices/MaintenenceWS/getLstRoomRequest" message="tns:getLstRoom" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getLstRoomResponse" message="tns:getLstRoomResponse" />
+    </operation>
+    <operation name="getArea">
+      <input wsam:Action="http://webservices/MaintenenceWS/getAreaRequest" message="tns:getArea" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getAreaResponse" message="tns:getAreaResponse" />
+    </operation>
+    <operation name="getLstPerson">
+      <input wsam:Action="http://webservices/MaintenenceWS/getLstPersonRequest" message="tns:getLstPerson" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getLstPersonResponse" message="tns:getLstPersonResponse" />
+    </operation>
+    <operation name="getLstArea">
+      <input wsam:Action="http://webservices/MaintenenceWS/getLstAreaRequest" message="tns:getLstArea" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getLstAreaResponse" message="tns:getLstAreaResponse" />
+    </operation>
+    <operation name="getLstClient">
+      <input wsam:Action="http://webservices/MaintenenceWS/getLstClientRequest" message="tns:getLstClient" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getLstClientResponse" message="tns:getLstClientResponse" />
+    </operation>
+    <operation name="getLstPurchase">
+      <input wsam:Action="http://webservices/MaintenenceWS/getLstPurchaseRequest" message="tns:getLstPurchase" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getLstPurchaseResponse" message="tns:getLstPurchaseResponse" />
+    </operation>
+    <operation name="createEvents">
+      <input wsam:Action="http://webservices/MaintenenceWS/createEventsRequest" message="tns:createEvents" />
+      <output wsam:Action="http://webservices/MaintenenceWS/createEventsResponse" message="tns:createEventsResponse" />
+    </operation>
+    <operation name="getLstEmployee">
+      <input wsam:Action="http://webservices/MaintenenceWS/getLstEmployeeRequest" message="tns:getLstEmployee" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getLstEmployeeResponse" message="tns:getLstEmployeeResponse" />
+    </operation>
+    <operation name="createArea">
+      <input wsam:Action="http://webservices/MaintenenceWS/createAreaRequest" message="tns:createArea" />
+      <output wsam:Action="http://webservices/MaintenenceWS/createAreaResponse" message="tns:createAreaResponse" />
+    </operation>
+    <operation name="updatePerson">
+      <input wsam:Action="http://webservices/MaintenenceWS/updatePersonRequest" message="tns:updatePerson" />
+      <output wsam:Action="http://webservices/MaintenenceWS/updatePersonResponse" message="tns:updatePersonResponse" />
+    </operation>
+    <operation name="deletePackages">
+      <input wsam:Action="http://webservices/MaintenenceWS/deletePackagesRequest" message="tns:deletePackages" />
+      <output wsam:Action="http://webservices/MaintenenceWS/deletePackagesResponse" message="tns:deletePackagesResponse" />
+    </operation>
+    <operation name="getReservation">
+      <input wsam:Action="http://webservices/MaintenenceWS/getReservationRequest" message="tns:getReservation" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getReservationResponse" message="tns:getReservationResponse" />
+    </operation>
+    <operation name="deleteEvents">
+      <input wsam:Action="http://webservices/MaintenenceWS/deleteEventsRequest" message="tns:deleteEvents" />
+      <output wsam:Action="http://webservices/MaintenenceWS/deleteEventsResponse" message="tns:deleteEventsResponse" />
+    </operation>
+    <operation name="getRoom">
+      <input wsam:Action="http://webservices/MaintenenceWS/getRoomRequest" message="tns:getRoom" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getRoomResponse" message="tns:getRoomResponse" />
+    </operation>
+    <operation name="getRestaurant">
+      <input wsam:Action="http://webservices/MaintenenceWS/getRestaurantRequest" message="tns:getRestaurant" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getRestaurantResponse" message="tns:getRestaurantResponse" />
+    </operation>
+    <operation name="deleteArea">
+      <input wsam:Action="http://webservices/MaintenenceWS/deleteAreaRequest" message="tns:deleteArea" />
+      <output wsam:Action="http://webservices/MaintenenceWS/deleteAreaResponse" message="tns:deleteAreaResponse" />
+    </operation>
+    <operation name="updateEmployee">
+      <input wsam:Action="http://webservices/MaintenenceWS/updateEmployeeRequest" message="tns:updateEmployee" />
+      <output wsam:Action="http://webservices/MaintenenceWS/updateEmployeeResponse" message="tns:updateEmployeeResponse" />
+    </operation>
+    <operation name="updateArea">
+      <input wsam:Action="http://webservices/MaintenenceWS/updateAreaRequest" message="tns:updateArea" />
+      <output wsam:Action="http://webservices/MaintenenceWS/updateAreaResponse" message="tns:updateAreaResponse" />
+    </operation>
+    <operation name="updateFood">
+      <input wsam:Action="http://webservices/MaintenenceWS/updateFoodRequest" message="tns:updateFood" />
+      <output wsam:Action="http://webservices/MaintenenceWS/updateFoodResponse" message="tns:updateFoodResponse" />
+    </operation>
+    <operation name="updatePackages">
+      <input wsam:Action="http://webservices/MaintenenceWS/updatePackagesRequest" message="tns:updatePackages" />
+      <output wsam:Action="http://webservices/MaintenenceWS/updatePackagesResponse" message="tns:updatePackagesResponse" />
+    </operation>
+    <operation name="getPerson">
+      <input wsam:Action="http://webservices/MaintenenceWS/getPersonRequest" message="tns:getPerson" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getPersonResponse" message="tns:getPersonResponse" />
+    </operation>
+    <operation name="updateEvents">
+      <input wsam:Action="http://webservices/MaintenenceWS/updateEventsRequest" message="tns:updateEvents" />
+      <output wsam:Action="http://webservices/MaintenenceWS/updateEventsResponse" message="tns:updateEventsResponse" />
+    </operation>
+    <operation name="updateRoom">
+      <input wsam:Action="http://webservices/MaintenenceWS/updateRoomRequest" message="tns:updateRoom" />
+      <output wsam:Action="http://webservices/MaintenenceWS/updateRoomResponse" message="tns:updateRoomResponse" />
+    </operation>
+    <operation name="deletePurchase">
+      <input wsam:Action="http://webservices/MaintenenceWS/deletePurchaseRequest" message="tns:deletePurchase" />
+      <output wsam:Action="http://webservices/MaintenenceWS/deletePurchaseResponse" message="tns:deletePurchaseResponse" />
+    </operation>
+    <operation name="updateRestaurant">
+      <input wsam:Action="http://webservices/MaintenenceWS/updateRestaurantRequest" message="tns:updateRestaurant" />
+      <output wsam:Action="http://webservices/MaintenenceWS/updateRestaurantResponse" message="tns:updateRestaurantResponse" />
+    </operation>
+    <operation name="getPurchase">
+      <input wsam:Action="http://webservices/MaintenenceWS/getPurchaseRequest" message="tns:getPurchase" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getPurchaseResponse" message="tns:getPurchaseResponse" />
+    </operation>
+    <operation name="deletePerson">
+      <input wsam:Action="http://webservices/MaintenenceWS/deletePersonRequest" message="tns:deletePerson" />
+      <output wsam:Action="http://webservices/MaintenenceWS/deletePersonResponse" message="tns:deletePersonResponse" />
+    </operation>
+    <operation name="deleteRoom">
+      <input wsam:Action="http://webservices/MaintenenceWS/deleteRoomRequest" message="tns:deleteRoom" />
+      <output wsam:Action="http://webservices/MaintenenceWS/deleteRoomResponse" message="tns:deleteRoomResponse" />
+    </operation>
+    <operation name="getFood">
+      <input wsam:Action="http://webservices/MaintenenceWS/getFoodRequest" message="tns:getFood" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getFoodResponse" message="tns:getFoodResponse" />
+    </operation>
+    <operation name="getEmployee">
+      <input wsam:Action="http://webservices/MaintenenceWS/getEmployeeRequest" message="tns:getEmployee" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getEmployeeResponse" message="tns:getEmployeeResponse" />
+    </operation>
+    <operation name="deleteEmployee">
+      <input wsam:Action="http://webservices/MaintenenceWS/deleteEmployeeRequest" message="tns:deleteEmployee" />
+      <output wsam:Action="http://webservices/MaintenenceWS/deleteEmployeeResponse" message="tns:deleteEmployeeResponse" />
+    </operation>
+    <operation name="deleteFood">
+      <input wsam:Action="http://webservices/MaintenenceWS/deleteFoodRequest" message="tns:deleteFood" />
+      <output wsam:Action="http://webservices/MaintenenceWS/deleteFoodResponse" message="tns:deleteFoodResponse" />
+    </operation>
+    <operation name="updateClient">
+      <input wsam:Action="http://webservices/MaintenenceWS/updateClientRequest" message="tns:updateClient" />
+      <output wsam:Action="http://webservices/MaintenenceWS/updateClientResponse" message="tns:updateClientResponse" />
+    </operation>
+    <operation name="deleteRestaurant">
+      <input wsam:Action="http://webservices/MaintenenceWS/deleteRestaurantRequest" message="tns:deleteRestaurant" />
+      <output wsam:Action="http://webservices/MaintenenceWS/deleteRestaurantResponse" message="tns:deleteRestaurantResponse" />
+    </operation>
+    <operation name="getEvents">
+      <input wsam:Action="http://webservices/MaintenenceWS/getEventsRequest" message="tns:getEvents" />
+      <output wsam:Action="http://webservices/MaintenenceWS/getEventsResponse" message="tns:getEventsResponse" />
+    </operation>
+    <operation name="updatePurchase">
+      <input wsam:Action="http://webservices/MaintenenceWS/updatePurchaseRequest" message="tns:updatePurchase" />
+      <output wsam:Action="http://webservices/MaintenenceWS/updatePurchaseResponse" message="tns:updatePurchaseResponse" />
+    </operation>
+    <operation name="deleteClient">
+      <input wsam:Action="http://webservices/MaintenenceWS/deleteClientRequest" message="tns:deleteClient" />
+      <output wsam:Action="http://webservices/MaintenenceWS/deleteClientResponse" message="tns:deleteClientResponse" />
+    </operation>
+  </portType>
+  <binding name="MaintenenceWSPortBinding" type="tns:MaintenenceWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getPackages">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getClient">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createClient">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstPurchaseInfo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createReservation">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateReservation">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deletePurchaseInfo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updatePurchaseInfo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstReservation">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteReservation">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstEvents">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createPerson">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createFood">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createRoom">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createRestaurant">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createPackages">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createEmployee">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createPurchase">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstPackages">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstFood">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstRestaurant">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstRoom">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getArea">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstPerson">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstArea">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstClient">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstPurchase">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createEvents">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstEmployee">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createArea">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updatePerson">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deletePackages">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getReservation">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteEvents">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getRoom">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getRestaurant">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteArea">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateEmployee">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateArea">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateFood">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updatePackages">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPerson">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateEvents">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateRoom">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deletePurchase">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateRestaurant">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPurchase">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deletePerson">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteRoom">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getFood">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getEmployee">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteEmployee">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteFood">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateClient">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteRestaurant">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getEvents">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updatePurchase">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteClient">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="MaintenenceWS">
+    <port name="MaintenenceWSPort" binding="tns:MaintenenceWSPortBinding">
+      <soap:address location="http://localhost:8080/Hoteles-Reserva-WS/MaintenenceWS" />
+    </port>
+  </service>
+</definitions>

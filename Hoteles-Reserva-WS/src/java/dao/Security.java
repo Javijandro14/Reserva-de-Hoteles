@@ -168,7 +168,7 @@ public class Security {
             user.setDateCrea(rs.getString(""));
             user.setDateMod(rs.getString(""));
             user.setActive(rs.getInt("") == 1);
-            user.setPerson(maintenence.getPerson(rs.getInt("")));
+            user.setIdPerson(rs.getInt(""));
             rs.close();
             con.close();
         } catch (Exception ex) {

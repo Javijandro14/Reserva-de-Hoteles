@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://webservices/" targetNamespace="http://webservices/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="createArea" type="tns:createArea" />
+  <xs:element name="createAreaResponse" type="tns:createAreaResponse" />
+  <xs:element name="createClient" type="tns:createClient" />
+  <xs:element name="createClientResponse" type="tns:createClientResponse" />
+  <xs:element name="createEmployee" type="tns:createEmployee" />
+  <xs:element name="createEmployeeResponse" type="tns:createEmployeeResponse" />
+  <xs:element name="createEvents" type="tns:createEvents" />
+  <xs:element name="createEventsResponse" type="tns:createEventsResponse" />
+  <xs:element name="createFood" type="tns:createFood" />
+  <xs:element name="createFoodResponse" type="tns:createFoodResponse" />
+  <xs:element name="createPackages" type="tns:createPackages" />
+  <xs:element name="createPackagesResponse" type="tns:createPackagesResponse" />
+  <xs:element name="createPerson" type="tns:createPerson" />
+  <xs:element name="createPersonResponse" type="tns:createPersonResponse" />
+  <xs:element name="createPurchase" type="tns:createPurchase" />
+  <xs:element name="createPurchaseResponse" type="tns:createPurchaseResponse" />
+  <xs:element name="createReservation" type="tns:createReservation" />
+  <xs:element name="createReservationResponse" type="tns:createReservationResponse" />
+  <xs:element name="createRestaurant" type="tns:createRestaurant" />
+  <xs:element name="createRestaurantResponse" type="tns:createRestaurantResponse" />
+  <xs:element name="createRoom" type="tns:createRoom" />
+  <xs:element name="createRoomResponse" type="tns:createRoomResponse" />
+  <xs:element name="deleteArea" type="tns:deleteArea" />
+  <xs:element name="deleteAreaResponse" type="tns:deleteAreaResponse" />
+  <xs:element name="deleteClient" type="tns:deleteClient" />
+  <xs:element name="deleteClientResponse" type="tns:deleteClientResponse" />
+  <xs:element name="deleteEmployee" type="tns:deleteEmployee" />
+  <xs:element name="deleteEmployeeResponse" type="tns:deleteEmployeeResponse" />
+  <xs:element name="deleteEvents" type="tns:deleteEvents" />
+  <xs:element name="deleteEventsResponse" type="tns:deleteEventsResponse" />
+  <xs:element name="deleteFood" type="tns:deleteFood" />
+  <xs:element name="deleteFoodResponse" type="tns:deleteFoodResponse" />
+  <xs:element name="deletePackages" type="tns:deletePackages" />
+  <xs:element name="deletePackagesResponse" type="tns:deletePackagesResponse" />
+  <xs:element name="deletePerson" type="tns:deletePerson" />
+  <xs:element name="deletePersonResponse" type="tns:deletePersonResponse" />
+  <xs:element name="deletePurchase" type="tns:deletePurchase" />
+  <xs:element name="deletePurchaseInfo" type="tns:deletePurchaseInfo" />
+  <xs:element name="deletePurchaseInfoResponse" type="tns:deletePurchaseInfoResponse" />
+  <xs:element name="deletePurchaseResponse" type="tns:deletePurchaseResponse" />
+  <xs:element name="deleteReservation" type="tns:deleteReservation" />
+  <xs:element name="deleteReservationResponse" type="tns:deleteReservationResponse" />
+  <xs:element name="deleteRestaurant" type="tns:deleteRestaurant" />
+  <xs:element name="deleteRestaurantResponse" type="tns:deleteRestaurantResponse" />
+  <xs:element name="deleteRoom" type="tns:deleteRoom" />
+  <xs:element name="deleteRoomResponse" type="tns:deleteRoomResponse" />
+  <xs:element name="getArea" type="tns:getArea" />
+  <xs:element name="getAreaResponse" type="tns:getAreaResponse" />
+  <xs:element name="getClient" type="tns:getClient" />
+  <xs:element name="getClientResponse" type="tns:getClientResponse" />
+  <xs:element name="getEmployee" type="tns:getEmployee" />
+  <xs:element name="getEmployeeResponse" type="tns:getEmployeeResponse" />
+  <xs:element name="getEvents" type="tns:getEvents" />
+  <xs:element name="getEventsResponse" type="tns:getEventsResponse" />
+  <xs:element name="getFood" type="tns:getFood" />
+  <xs:element name="getFoodResponse" type="tns:getFoodResponse" />
+  <xs:element name="getLstArea" type="tns:getLstArea" />
+  <xs:element name="getLstAreaResponse" type="tns:getLstAreaResponse" />
+  <xs:element name="getLstClient" type="tns:getLstClient" />
+  <xs:element name="getLstClientResponse" type="tns:getLstClientResponse" />
+  <xs:element name="getLstEmployee" type="tns:getLstEmployee" />
+  <xs:element name="getLstEmployeeResponse" type="tns:getLstEmployeeResponse" />
+  <xs:element name="getLstEvents" type="tns:getLstEvents" />
+  <xs:element name="getLstEventsResponse" type="tns:getLstEventsResponse" />
+  <xs:element name="getLstFood" type="tns:getLstFood" />
+  <xs:element name="getLstFoodResponse" type="tns:getLstFoodResponse" />
+  <xs:element name="getLstPackages" type="tns:getLstPackages" />
+  <xs:element name="getLstPackagesResponse" type="tns:getLstPackagesResponse" />
+  <xs:element name="getLstPerson" type="tns:getLstPerson" />
+  <xs:element name="getLstPersonResponse" type="tns:getLstPersonResponse" />
+  <xs:element name="getLstPurchase" type="tns:getLstPurchase" />
+  <xs:element name="getLstPurchaseInfo" type="tns:getLstPurchaseInfo" />
+  <xs:element name="getLstPurchaseInfoResponse" type="tns:getLstPurchaseInfoResponse" />
+  <xs:element name="getLstPurchaseResponse" type="tns:getLstPurchaseResponse" />
+  <xs:element name="getLstReservation" type="tns:getLstReservation" />
+  <xs:element name="getLstReservationResponse" type="tns:getLstReservationResponse" />
+  <xs:element name="getLstRestaurant" type="tns:getLstRestaurant" />
+  <xs:element name="getLstRestaurantResponse" type="tns:getLstRestaurantResponse" />
+  <xs:element name="getLstRoom" type="tns:getLstRoom" />
+  <xs:element name="getLstRoomResponse" type="tns:getLstRoomResponse" />
+  <xs:element name="getPackages" type="tns:getPackages" />
+  <xs:element name="getPackagesResponse" type="tns:getPackagesResponse" />
+  <xs:element name="getPerson" type="tns:getPerson" />
+  <xs:element name="getPersonResponse" type="tns:getPersonResponse" />
+  <xs:element name="getPurchase" type="tns:getPurchase" />
+  <xs:element name="getPurchaseResponse" type="tns:getPurchaseResponse" />
+  <xs:element name="getReservation" type="tns:getReservation" />
+  <xs:element name="getReservationResponse" type="tns:getReservationResponse" />
+  <xs:element name="getRestaurant" type="tns:getRestaurant" />
+  <xs:element name="getRestaurantResponse" type="tns:getRestaurantResponse" />
+  <xs:element name="getRoom" type="tns:getRoom" />
+  <xs:element name="getRoomResponse" type="tns:getRoomResponse" />
+  <xs:element name="updateArea" type="tns:updateArea" />
+  <xs:element name="updateAreaResponse" type="tns:updateAreaResponse" />
+  <xs:element name="updateClient" type="tns:updateClient" />
+  <xs:element name="updateClientResponse" type="tns:updateClientResponse" />
+  <xs:element name="updateEmployee" type="tns:updateEmployee" />
+  <xs:element name="updateEmployeeResponse" type="tns:updateEmployeeResponse" />
+  <xs:element name="updateEvents" type="tns:updateEvents" />
+  <xs:element name="updateEventsResponse" type="tns:updateEventsResponse" />
+  <xs:element name="updateFood" type="tns:updateFood" />
+  <xs:element name="updateFoodResponse" type="tns:updateFoodResponse" />
+  <xs:element name="updatePackages" type="tns:updatePackages" />
+  <xs:element name="updatePackagesResponse" type="tns:updatePackagesResponse" />
+  <xs:element name="updatePerson" type="tns:updatePerson" />
+  <xs:element name="updatePersonResponse" type="tns:updatePersonResponse" />
+  <xs:element name="updatePurchase" type="tns:updatePurchase" />
+  <xs:element name="updatePurchaseInfo" type="tns:updatePurchaseInfo" />
+  <xs:element name="updatePurchaseInfoResponse" type="tns:updatePurchaseInfoResponse" />
+  <xs:element name="updatePurchaseResponse" type="tns:updatePurchaseResponse" />
+  <xs:element name="updateReservation" type="tns:updateReservation" />
+  <xs:element name="updateReservationResponse" type="tns:updateReservationResponse" />
+  <xs:element name="updateRestaurant" type="tns:updateRestaurant" />
+  <xs:element name="updateRestaurantResponse" type="tns:updateRestaurantResponse" />
+  <xs:element name="updateRoom" type="tns:updateRoom" />
+  <xs:element name="updateRoomResponse" type="tns:updateRoomResponse" />
+  <xs:complexType name="getLstPackages">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstPackagesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:packages" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="packages">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="active" type="xs:boolean" />
+      <xs:element name="cost" type="xs:double" />
+      <xs:element name="idPackage" type="xs:int" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePackages">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:packages" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePackagesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstPurchaseInfo">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstPurchaseInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:purchaseInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="purchaseInfo">
+    <xs:sequence>
+      <xs:element name="cost" type="xs:double" />
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element name="discounts" type="xs:double" />
+      <xs:element name="idPurchase" type="xs:int" />
+      <xs:element name="total" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createReservation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:reservation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reservation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="dateCrea" type="xs:string" />
+      <xs:element minOccurs="0" name="dateMod" type="xs:string" />
+      <xs:element name="idClient" type="xs:int" />
+      <xs:element name="idPackages" type="xs:int" />
+      <xs:element minOccurs="0" name="idReservation" type="xs:string" />
+      <xs:element name="idRoom" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createReservationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateClient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:client" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="client">
+    <xs:sequence>
+      <xs:element name="active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="dateCrea" type="xs:string" />
+      <xs:element minOccurs="0" name="dateMod" type="xs:string" />
+      <xs:element name="idClient" type="xs:int" />
+      <xs:element name="idUser" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateClientResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deletePurchase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:purchase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="purchase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element name="idClient" type="xs:int" />
+      <xs:element name="idPurchase" type="xs:int" />
+      <xs:element name="total" type="xs:double" />
+      <xs:element minOccurs="0" name="transactionDate" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deletePurchaseResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteEvents">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:events" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="events">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="active" type="xs:boolean" />
+      <xs:element name="cost" type="xs:double" />
+      <xs:element minOccurs="0" name="dateCrea" type="xs:string" />
+      <xs:element minOccurs="0" name="dateMod" type="xs:string" />
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element minOccurs="0" name="duration" type="xs:string" />
+      <xs:element minOccurs="0" name="endDate" type="xs:string" />
+      <xs:element name="idArea" type="xs:int" />
+      <xs:element name="idEvent" type="xs:int" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="startDate" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteEventsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstPerson">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstPersonResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:person" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="person">
+    <xs:sequence>
+      <xs:element name="active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="dateCrea" type="xs:string" />
+      <xs:element minOccurs="0" name="dateMod" type="xs:string" />
+      <xs:element minOccurs="0" name="dob" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="ethnicity" type="xs:string" />
+      <xs:element minOccurs="0" name="gender" type="xs:string" />
+      <xs:element minOccurs="0" name="idNo" type="xs:string" />
+      <xs:element name="idPerson" type="xs:int" />
+      <xs:element minOccurs="0" name="phone" type="xs:string" />
+      <xs:element minOccurs="0" name="fName" type="xs:string" />
+      <xs:element minOccurs="0" name="fSurname" type="xs:string" />
+      <xs:element minOccurs="0" name="mSurname" type="xs:string" />
+      <xs:element minOccurs="0" name="oName" type="xs:string" />
+      <xs:element minOccurs="0" name="sName" type="xs:string" />
+      <xs:element minOccurs="0" name="sSurname" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEmployee">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEmployeeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:employee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="employee">
+    <xs:sequence>
+      <xs:element name="active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="dateCrea" type="xs:string" />
+      <xs:element minOccurs="0" name="dateMod" type="xs:string" />
+      <xs:element name="idEmployee" type="xs:int" />
+      <xs:element name="idRole" type="xs:int" />
+      <xs:element name="idUser" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deletePackages">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:packages" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deletePackagesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRoom">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRoomResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:room" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="room">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dateCrea" type="xs:string" />
+      <xs:element minOccurs="0" name="dateMod" type="xs:string" />
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element name="idArea" type="xs:int" />
+      <xs:element name="idRoom" type="xs:int" />
+      <xs:element name="numRooms" type="xs:int" />
+      <xs:element name="numShowers" type="xs:int" />
+      <xs:element name="status" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createFood">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:food" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="food">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="active" type="xs:boolean" />
+      <xs:element name="cost" type="xs:double" />
+      <xs:element minOccurs="0" name="dateCrea" type="xs:string" />
+      <xs:element minOccurs="0" name="dateMod" type="xs:string" />
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element name="idFood" type="xs:int" />
+      <xs:element name="idRestaurant" type="xs:int" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createFoodResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createRoom">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:room" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createRoomResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createPerson">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:person" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createPersonResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstArea">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstAreaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:area" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="area">
+    <xs:sequence>
+      <xs:element name="active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="dateCrea" type="xs:string" />
+      <xs:element minOccurs="0" name="dateMod" type="xs:string" />
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element name="idArea" type="xs:int" />
+      <xs:element minOccurs="0" name="level" type="xs:string" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:employee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createEmployeeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getClient">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getClientResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:client" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateEvents">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:events" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateEventsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstClient">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstClientResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:client" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteArea">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:area" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteAreaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePerson">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:person" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePersonResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getArea">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAreaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:area" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPackages">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPackagesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:packages" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createPurchase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:purchase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createPurchaseResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteRestaurant">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:restaurant" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="restaurant">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="dateCrea" type="xs:string" />
+      <xs:element minOccurs="0" name="dateMod" type="xs:string" />
+      <xs:element minOccurs="0" name="endTime" type="xs:string" />
+      <xs:element name="idArea" type="xs:int" />
+      <xs:element name="idRestaurant" type="xs:int" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="startTime" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteRestaurantResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstRestaurant">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstRestaurantResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:restaurant" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstReservation">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstReservationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:reservation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createRestaurant">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:restaurant" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createRestaurantResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteReservation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:reservation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteReservationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteFood">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:food" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteFoodResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createEvents">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:events" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createEventsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteRoom">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:room" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteRoomResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePurchaseInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:purchaseInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePurchaseInfoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateRoom">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:room" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateRoomResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:employee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateEmployeeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvents">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEventsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:events" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateFood">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:food" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateFoodResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePurchase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:purchase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePurchaseResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstPurchase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstPurchaseResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:purchase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRestaurant">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRestaurantResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:restaurant" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstEmployee">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstEmployeeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:employee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getFood">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getFoodResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:food" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateReservation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:reservation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateReservationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateArea">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:area" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateAreaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteClient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:client" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteClientResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstRoom">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstRoomResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:room" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createClient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:client" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createClientResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deletePerson">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:person" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deletePersonResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstEvents">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstEventsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:events" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deletePurchaseInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:purchaseInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deletePurchaseInfoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createArea">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:area" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createAreaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getReservation">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getReservationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:reservation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:employee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteEmployeeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLstFood">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLstFoodResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:food" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPurchase">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPurchaseResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:purchase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createPackages">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:packages" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createPackagesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateRestaurant">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:restaurant" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateRestaurantResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPerson">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPersonResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:person" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

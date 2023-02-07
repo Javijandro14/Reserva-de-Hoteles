@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="SecurityWS" targetNamespace="http://webservices/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/Hoteles-Reserva-WS/SecurityWS?xsd=1" namespace="http://webservices/" />
+    </xsd:schema>
+  </types>
+  <message name="getPermissions">
+    <part name="parameters" element="tns:getPermissions" />
+  </message>
+  <message name="getPermissionsResponse">
+    <part name="parameters" element="tns:getPermissionsResponse" />
+  </message>
+  <message name="updatePermissions">
+    <part name="parameters" element="tns:updatePermissions" />
+  </message>
+  <message name="updatePermissionsResponse">
+    <part name="parameters" element="tns:updatePermissionsResponse" />
+  </message>
+  <message name="createPermissions">
+    <part name="parameters" element="tns:createPermissions" />
+  </message>
+  <message name="createPermissionsResponse">
+    <part name="parameters" element="tns:createPermissionsResponse" />
+  </message>
+  <message name="deletePermissions">
+    <part name="parameters" element="tns:deletePermissions" />
+  </message>
+  <message name="deletePermissionsResponse">
+    <part name="parameters" element="tns:deletePermissionsResponse" />
+  </message>
+  <message name="getLstPermissions">
+    <part name="parameters" element="tns:getLstPermissions" />
+  </message>
+  <message name="getLstPermissionsResponse">
+    <part name="parameters" element="tns:getLstPermissionsResponse" />
+  </message>
+  <message name="getLstModule">
+    <part name="parameters" element="tns:getLstModule" />
+  </message>
+  <message name="getLstModuleResponse">
+    <part name="parameters" element="tns:getLstModuleResponse" />
+  </message>
+  <message name="getLstUser">
+    <part name="parameters" element="tns:getLstUser" />
+  </message>
+  <message name="getLstUserResponse">
+    <part name="parameters" element="tns:getLstUserResponse" />
+  </message>
+  <message name="getLstRole">
+    <part name="parameters" element="tns:getLstRole" />
+  </message>
+  <message name="getLstRoleResponse">
+    <part name="parameters" element="tns:getLstRoleResponse" />
+  </message>
+  <message name="createUser">
+    <part name="parameters" element="tns:createUser" />
+  </message>
+  <message name="createUserResponse">
+    <part name="parameters" element="tns:createUserResponse" />
+  </message>
+  <message name="createModule">
+    <part name="parameters" element="tns:createModule" />
+  </message>
+  <message name="createModuleResponse">
+    <part name="parameters" element="tns:createModuleResponse" />
+  </message>
+  <message name="updateRole">
+    <part name="parameters" element="tns:updateRole" />
+  </message>
+  <message name="updateRoleResponse">
+    <part name="parameters" element="tns:updateRoleResponse" />
+  </message>
+  <message name="createRole">
+    <part name="parameters" element="tns:createRole" />
+  </message>
+  <message name="createRoleResponse">
+    <part name="parameters" element="tns:createRoleResponse" />
+  </message>
+  <message name="deleteRole">
+    <part name="parameters" element="tns:deleteRole" />
+  </message>
+  <message name="deleteRoleResponse">
+    <part name="parameters" element="tns:deleteRoleResponse" />
+  </message>
+  <message name="deleteUser">
+    <part name="parameters" element="tns:deleteUser" />
+  </message>
+  <message name="deleteUserResponse">
+    <part name="parameters" element="tns:deleteUserResponse" />
+  </message>
+  <message name="updateModule">
+    <part name="parameters" element="tns:updateModule" />
+  </message>
+  <message name="updateModuleResponse">
+    <part name="parameters" element="tns:updateModuleResponse" />
+  </message>
+  <message name="deleteModule">
+    <part name="parameters" element="tns:deleteModule" />
+  </message>
+  <message name="deleteModuleResponse">
+    <part name="parameters" element="tns:deleteModuleResponse" />
+  </message>
+  <message name="getRole">
+    <part name="parameters" element="tns:getRole" />
+  </message>
+  <message name="getRoleResponse">
+    <part name="parameters" element="tns:getRoleResponse" />
+  </message>
+  <message name="updateUser">
+    <part name="parameters" element="tns:updateUser" />
+  </message>
+  <message name="updateUserResponse">
+    <part name="parameters" element="tns:updateUserResponse" />
+  </message>
+  <message name="getUser">
+    <part name="parameters" element="tns:getUser" />
+  </message>
+  <message name="getUserResponse">
+    <part name="parameters" element="tns:getUserResponse" />
+  </message>
+  <message name="getModule">
+    <part name="parameters" element="tns:getModule" />
+  </message>
+  <message name="getModuleResponse">
+    <part name="parameters" element="tns:getModuleResponse" />
+  </message>
+  <portType name="SecurityWS">
+    <operation name="getPermissions">
+      <input wsam:Action="http://webservices/SecurityWS/getPermissionsRequest" message="tns:getPermissions" />
+      <output wsam:Action="http://webservices/SecurityWS/getPermissionsResponse" message="tns:getPermissionsResponse" />
+    </operation>
+    <operation name="updatePermissions">
+      <input wsam:Action="http://webservices/SecurityWS/updatePermissionsRequest" message="tns:updatePermissions" />
+      <output wsam:Action="http://webservices/SecurityWS/updatePermissionsResponse" message="tns:updatePermissionsResponse" />
+    </operation>
+    <operation name="createPermissions">
+      <input wsam:Action="http://webservices/SecurityWS/createPermissionsRequest" message="tns:createPermissions" />
+      <output wsam:Action="http://webservices/SecurityWS/createPermissionsResponse" message="tns:createPermissionsResponse" />
+    </operation>
+    <operation name="deletePermissions">
+      <input wsam:Action="http://webservices/SecurityWS/deletePermissionsRequest" message="tns:deletePermissions" />
+      <output wsam:Action="http://webservices/SecurityWS/deletePermissionsResponse" message="tns:deletePermissionsResponse" />
+    </operation>
+    <operation name="getLstPermissions">
+      <input wsam:Action="http://webservices/SecurityWS/getLstPermissionsRequest" message="tns:getLstPermissions" />
+      <output wsam:Action="http://webservices/SecurityWS/getLstPermissionsResponse" message="tns:getLstPermissionsResponse" />
+    </operation>
+    <operation name="getLstModule">
+      <input wsam:Action="http://webservices/SecurityWS/getLstModuleRequest" message="tns:getLstModule" />
+      <output wsam:Action="http://webservices/SecurityWS/getLstModuleResponse" message="tns:getLstModuleResponse" />
+    </operation>
+    <operation name="getLstUser">
+      <input wsam:Action="http://webservices/SecurityWS/getLstUserRequest" message="tns:getLstUser" />
+      <output wsam:Action="http://webservices/SecurityWS/getLstUserResponse" message="tns:getLstUserResponse" />
+    </operation>
+    <operation name="getLstRole">
+      <input wsam:Action="http://webservices/SecurityWS/getLstRoleRequest" message="tns:getLstRole" />
+      <output wsam:Action="http://webservices/SecurityWS/getLstRoleResponse" message="tns:getLstRoleResponse" />
+    </operation>
+    <operation name="createUser">
+      <input wsam:Action="http://webservices/SecurityWS/createUserRequest" message="tns:createUser" />
+      <output wsam:Action="http://webservices/SecurityWS/createUserResponse" message="tns:createUserResponse" />
+    </operation>
+    <operation name="createModule">
+      <input wsam:Action="http://webservices/SecurityWS/createModuleRequest" message="tns:createModule" />
+      <output wsam:Action="http://webservices/SecurityWS/createModuleResponse" message="tns:createModuleResponse" />
+    </operation>
+    <operation name="updateRole">
+      <input wsam:Action="http://webservices/SecurityWS/updateRoleRequest" message="tns:updateRole" />
+      <output wsam:Action="http://webservices/SecurityWS/updateRoleResponse" message="tns:updateRoleResponse" />
+    </operation>
+    <operation name="createRole">
+      <input wsam:Action="http://webservices/SecurityWS/createRoleRequest" message="tns:createRole" />
+      <output wsam:Action="http://webservices/SecurityWS/createRoleResponse" message="tns:createRoleResponse" />
+    </operation>
+    <operation name="deleteRole">
+      <input wsam:Action="http://webservices/SecurityWS/deleteRoleRequest" message="tns:deleteRole" />
+      <output wsam:Action="http://webservices/SecurityWS/deleteRoleResponse" message="tns:deleteRoleResponse" />
+    </operation>
+    <operation name="deleteUser">
+      <input wsam:Action="http://webservices/SecurityWS/deleteUserRequest" message="tns:deleteUser" />
+      <output wsam:Action="http://webservices/SecurityWS/deleteUserResponse" message="tns:deleteUserResponse" />
+    </operation>
+    <operation name="updateModule">
+      <input wsam:Action="http://webservices/SecurityWS/updateModuleRequest" message="tns:updateModule" />
+      <output wsam:Action="http://webservices/SecurityWS/updateModuleResponse" message="tns:updateModuleResponse" />
+    </operation>
+    <operation name="deleteModule">
+      <input wsam:Action="http://webservices/SecurityWS/deleteModuleRequest" message="tns:deleteModule" />
+      <output wsam:Action="http://webservices/SecurityWS/deleteModuleResponse" message="tns:deleteModuleResponse" />
+    </operation>
+    <operation name="getRole">
+      <input wsam:Action="http://webservices/SecurityWS/getRoleRequest" message="tns:getRole" />
+      <output wsam:Action="http://webservices/SecurityWS/getRoleResponse" message="tns:getRoleResponse" />
+    </operation>
+    <operation name="updateUser">
+      <input wsam:Action="http://webservices/SecurityWS/updateUserRequest" message="tns:updateUser" />
+      <output wsam:Action="http://webservices/SecurityWS/updateUserResponse" message="tns:updateUserResponse" />
+    </operation>
+    <operation name="getUser">
+      <input wsam:Action="http://webservices/SecurityWS/getUserRequest" message="tns:getUser" />
+      <output wsam:Action="http://webservices/SecurityWS/getUserResponse" message="tns:getUserResponse" />
+    </operation>
+    <operation name="getModule">
+      <input wsam:Action="http://webservices/SecurityWS/getModuleRequest" message="tns:getModule" />
+      <output wsam:Action="http://webservices/SecurityWS/getModuleResponse" message="tns:getModuleResponse" />
+    </operation>
+  </portType>
+  <binding name="SecurityWSPortBinding" type="tns:SecurityWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getPermissions">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updatePermissions">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createPermissions">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deletePermissions">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstPermissions">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstModule">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstUser">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLstRole">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createUser">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createModule">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateRole">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createRole">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteRole">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteUser">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateModule">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteModule">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getRole">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateUser">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getUser">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getModule">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="SecurityWS">
+    <port name="SecurityWSPort" binding="tns:SecurityWSPortBinding">
+      <soap:address location="http://localhost:8080/Hoteles-Reserva-WS/SecurityWS" />
+    </port>
+  </service>
+</definitions>
