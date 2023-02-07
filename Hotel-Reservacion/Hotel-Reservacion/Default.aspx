@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-        <!-- banner -->
+<%--        <!-- banner -->
         <div id="home" class="w3ls-banner">
             <!-- banner-text -->
             <div class="slider">
@@ -167,5 +167,5 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--%>
 </asp:Content>

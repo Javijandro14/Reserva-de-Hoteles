@@ -7,11 +7,10 @@ namespace Hotel_Reservacion.Models
 {
     public class Employee
     {
-        private int idEmployee;
+        private int idEmployee, idRole, idUser;
         private bool active;
         private String dateCrea, dateMod;
-        private Role role;
-        private User user;
+        
 
         public int IdEmployee
         {
@@ -24,26 +23,26 @@ namespace Hotel_Reservacion.Models
                 idEmployee = value;
             }
         }
-        public Role Role
+        public int IdRole
         {
             get
             {
-                return role;
+                return idRole;
             }
             set
             {
-                role = value;
+                idRole = value;
             }
         }
-        public User User
+        public int IdUser
         {
             get
             {
-                return user;
+                return idUser;
             }
             set
             {
-                user = value;
+                idUser = value;
             }
         }
         public String DateCrea

@@ -7,29 +7,28 @@ namespace Hotel_Reservacion.Models
 {
     public class EventAttendance
     {
-        private Events events;
-        private Client client;
+        private int idEvents,idClient;
 
-        public Events Events
+        public int IdEvents
         {
             get
             {
-                return events;
+                return idEvents;
             }
             set
             {
-                events = value;
+                idEvents = value;
             }
         }
-        public Client Client
+        public int IdClient 
         {
             get
             {
-                return client;
+                return idClient;
             }
             set
             {
-                client = value;
+                idClient = value;
             }
         }
     }

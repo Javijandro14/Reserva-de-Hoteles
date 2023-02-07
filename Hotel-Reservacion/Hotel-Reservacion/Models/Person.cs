@@ -12,147 +12,147 @@ namespace Hotel_Reservacion.Models
         private String fName, sName, oName, fSurname, sSurname,
                 mSurname, dob, gender, idNo, phone, email, ethnicity, dateCrea, dateMod;
 
-        public int IdArea
+        public int IdPerson
         {
             get
             {
-                return idArea;
+                return idPerson;
             }
             set
             {
-                idArea = value;
+                idPerson = value;
             }
         }
-        public int IdArea
+        public String FName
         {
             get
             {
-                return idArea;
+                return fName;
             }
             set
             {
-                idArea = value;
+                fName = value;
             }
         }
-        public int IdArea
+        public String SName
         {
             get
             {
-                return idArea;
+                return sName;
             }
             set
             {
-                idArea = value;
+                sName = value;
             }
         }
-        public int IdArea
+        public String OName
         {
             get
             {
-                return idArea;
+                return oName;
             }
             set
             {
-                idArea = value;
+                oName = value;
             }
         }
-        public int IdArea
+        public String FSurname
         {
             get
             {
-                return idArea;
+                return fSurname;
             }
             set
             {
-                idArea = value;
+                fSurname = value;
             }
         }
-        public int IdArea
+        public String SSurname
         {
             get
             {
-                return idArea;
+                return sSurname;
             }
             set
             {
-                idArea = value;
+                sSurname = value;
             }
         }
-        public int IdArea
+        public String MSurname
         {
             get
             {
-                return idArea;
+                return mSurname;
             }
             set
             {
-                idArea = value;
+                mSurname = value;
             }
         }
-        public int IdArea
+        public String Dob
         {
             get
             {
-                return idArea;
+                return dob;
             }
             set
             {
-                idArea = value;
+                dob = value;
             }
         }
-        public int IdArea
+        public String Gender
         {
             get
             {
-                return idArea;
+                return gender;
             }
             set
             {
-                idArea = value;
+                gender = value;
             }
         }
-        public int IdArea
+        public String IdNo
         {
             get
             {
-                return idArea;
+                return idNo;
             }
             set
             {
-                idArea = value;
+                idNo = value;
             }
         }
-        public int IdArea
+        public String Phone
         {
             get
             {
-                return idArea;
+                return phone;
             }
             set
             {
-                idArea = value;
+                phone = value;
             }
         }
-        public int IdArea
+        public String Email
         {
             get
             {
-                return idArea;
+                return email;
             }
             set
             {
-                idArea = value;
+                email = value;
             }
         }
-        public int IdArea
+        public String Ethnicity
         {
             get
             {
-                return idArea;
+                return ethnicity;
             }
             set
             {
-                idArea = value;
+                ethnicity = value;
             }
         }
         public String DateCrea

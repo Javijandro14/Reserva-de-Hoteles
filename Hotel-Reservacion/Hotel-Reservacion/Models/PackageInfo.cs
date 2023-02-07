@@ -9,7 +9,7 @@ namespace Hotel_Reservacion.Models
     {
         private String name;
         private bool active;
-        private Packages packages;
+        private int idPackages;
 
         public String Name
         {
@@ -22,15 +22,15 @@ namespace Hotel_Reservacion.Models
                 name = value;
             }
         }
-        public Packages Packages
+        public int IdPackages
         {
             get
             {
-                return packages;
+                return idPackages;
             }
             set
             {
-                packages = value;
+                idPackages = value;
             }
         }
         public bool Active

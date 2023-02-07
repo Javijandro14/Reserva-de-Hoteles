@@ -27,8 +27,11 @@ public class SecurityWS {
     public List<Role> getLstRole() {
         return security.getLstRole();
     }
+    
     @WebMethod(operationName = "createUser")
-    public boolean createUser(User user) {
+    public boolean createUser() {
+        User user = new User();
+        
         return security.createUser(user);
     }
     @WebMethod(operationName = "createModule")

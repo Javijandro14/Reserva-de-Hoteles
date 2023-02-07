@@ -9,61 +9,61 @@ namespace Hotel_Reservacion.Models
     {
         private double cost, discounts, total;
         private String description;
-        private Purchase purchase;
+        private int idPurchase;
 
-        public int IdArea
+        public int IdPurchase
         {
             get
             {
-                return idArea;
+                return idPurchase;
             }
             set
             {
-                idArea = value;
+                idPurchase = value;
             }
         }
-        public int IdArea
+        public String Description
         {
             get
             {
-                return idArea;
+                return description;
             }
             set
             {
-                idArea = value;
+                description = value;
             }
         }
-        public int IdArea
+        public double Cost
         {
             get
             {
-                return idArea;
+                return cost;
             }
             set
             {
-                idArea = value;
+                cost = value;
             }
         }
-        public int IdArea
+        public double Discounts
         {
             get
             {
-                return idArea;
+                return discounts;
             }
             set
             {
-                idArea = value;
+                discounts = value;
             }
         }
-        public int IdArea
+        public double Total
         {
             get
             {
-                return idArea;
+                return total;
             }
             set
             {
-                idArea = value;
+                total = value;
             }
         }
     }

@@ -279,6 +279,45 @@
     <Content Include="Connected Services\WebMaintenence\Hotel_Reservacion.WebMaintenence.updateRoomResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="WebForms\c\Account\WebSecurity - Copy %282%29.aspx" />
+    <Content Include="WebForms\c\Account\WebSecurity - Copy %283%29.aspx" />
+    <Content Include="WebForms\c\Account\WebSecurity - Copy.aspx" />
+    <Content Include="WebForms\c\Account\WebSecurity.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebEvent.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebEventAttendance.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebFood.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebMeal.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebMealInfo.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebModule.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebPerson.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebPackage.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebPurchase.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebPurchaseInfo.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebReservation.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebArea.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebClient.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebEmployee.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebRestaurant.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebRoom.aspx" />
+    <Content Include="WebForms\e\Maintenence\WebRoomItems.aspx" />
+    <Content Include="WebForms\e\Orders\WebSecurity - Copy %282%29.aspx" />
+    <Content Include="WebForms\e\Orders\WebSecurity - Copy %283%29.aspx" />
+    <Content Include="WebForms\e\Orders\WebSecurity - Copy.aspx" />
+    <Content Include="WebForms\e\Orders\WebSecurity.aspx" />
+    <Content Include="WebForms\e\Process\WebSecurity - Copy %282%29.aspx" />
+    <Content Include="WebForms\e\Process\WebSecurity - Copy %283%29.aspx" />
+    <Content Include="WebForms\e\Process\WebSecurity - Copy.aspx" />
+    <Content Include="WebForms\e\Process\WebSecurity.aspx" />
+    <Content Include="WebForms\e\Reports\WebSecurity - Copy %282%29.aspx" />
+    <Content Include="WebForms\e\Reports\WebSecurity - Copy %283%29.aspx" />
+    <Content Include="WebForms\e\Reports\WebSecurity - Copy.aspx" />
+    <Content Include="WebForms\e\Reports\WebSecurity.aspx" />
+    <Content Include="WebForms\e\Security\WebUser.aspx" />
+    <Content Include="WebForms\e\Security\WebModule.aspx" />
+    <Content Include="WebForms\e\Security\WebPermission.aspx" />
+    <Content Include="WebForms\e\Security\WebRole.aspx" />
+    <Content Include="WebForms\c\WebClientMenu.aspx" />
+    <Content Include="WebForms\e\WebEmployeeMenu.aspx" />
     <None Include="Connected Services\WebMaintenence\MaintenenceWS.wsdl" />
     <None Include="Connected Services\WebMaintenence\MaintenenceWS.xsd">
       <SubType>Designer</SubType>
@@ -495,6 +534,8 @@
     <Content Include="Styles\StyleWebForm.css" />
     <Content Include="Styles\swipebox.css" />
     <Content Include="Web.config" />
+    <Content Include="WebForms\e\MenuEmployee.Master" />
+    <Content Include="WebForms\c\MenuClient.Master" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connected Services\WebMaintenence\Reference.cs">
@@ -560,6 +601,293 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\ClsErrorHandler.cs" />
     <Compile Include="Utilities\WebServices.cs" />
+    <Compile Include="WebForms\c\Account\WebSecurity - Copy %282%29.aspx.cs">
+      <DependentUpon>WebSecurity - Copy %282%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\c\Account\WebSecurity - Copy %282%29.aspx.designer.cs">
+      <DependentUpon>WebSecurity - Copy %282%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\c\Account\WebSecurity - Copy %283%29.aspx.cs">
+      <DependentUpon>WebSecurity - Copy %283%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\c\Account\WebSecurity - Copy %283%29.aspx.designer.cs">
+      <DependentUpon>WebSecurity - Copy %283%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\c\Account\WebSecurity - Copy.aspx.cs">
+      <DependentUpon>WebSecurity - Copy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\c\Account\WebSecurity - Copy.aspx.designer.cs">
+      <DependentUpon>WebSecurity - Copy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\c\Account\WebSecurity.aspx.cs">
+      <DependentUpon>WebSecurity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\c\Account\WebSecurity.aspx.designer.cs">
+      <DependentUpon>WebSecurity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebEvent.aspx.cs">
+      <DependentUpon>WebEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebEvent.aspx.designer.cs">
+      <DependentUpon>WebEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebEventAttendance.aspx.cs">
+      <DependentUpon>WebEventAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebEventAttendance.aspx.designer.cs">
+      <DependentUpon>WebEventAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebFood.aspx.cs">
+      <DependentUpon>WebFood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebFood.aspx.designer.cs">
+      <DependentUpon>WebFood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebMeal.aspx.cs">
+      <DependentUpon>WebMeal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebMeal.aspx.designer.cs">
+      <DependentUpon>WebMeal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebMealInfo.aspx.cs">
+      <DependentUpon>WebMealInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebMealInfo.aspx.designer.cs">
+      <DependentUpon>WebMealInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebModule.aspx.cs">
+      <DependentUpon>WebModule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebModule.aspx.designer.cs">
+      <DependentUpon>WebModule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebPerson.aspx.cs">
+      <DependentUpon>WebPerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebPerson.aspx.designer.cs">
+      <DependentUpon>WebPerson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebPackage.aspx.cs">
+      <DependentUpon>WebPackage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebPackage.aspx.designer.cs">
+      <DependentUpon>WebPackage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebPurchase.aspx.cs">
+      <DependentUpon>WebPurchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebPurchase.aspx.designer.cs">
+      <DependentUpon>WebPurchase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebPurchaseInfo.aspx.cs">
+      <DependentUpon>WebPurchaseInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebPurchaseInfo.aspx.designer.cs">
+      <DependentUpon>WebPurchaseInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebReservation.aspx.cs">
+      <DependentUpon>WebReservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebReservation.aspx.designer.cs">
+      <DependentUpon>WebReservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebArea.aspx.cs">
+      <DependentUpon>WebArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebArea.aspx.designer.cs">
+      <DependentUpon>WebArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebClient.aspx.cs">
+      <DependentUpon>WebClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebClient.aspx.designer.cs">
+      <DependentUpon>WebClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebEmployee.aspx.cs">
+      <DependentUpon>WebEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebEmployee.aspx.designer.cs">
+      <DependentUpon>WebEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebRestaurant.aspx.cs">
+      <DependentUpon>WebRestaurant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebRestaurant.aspx.designer.cs">
+      <DependentUpon>WebRestaurant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebRoom.aspx.cs">
+      <DependentUpon>WebRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebRoom.aspx.designer.cs">
+      <DependentUpon>WebRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebRoomItems.aspx.cs">
+      <DependentUpon>WebRoomItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Maintenence\WebRoomItems.aspx.designer.cs">
+      <DependentUpon>WebRoomItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\c\MenuClient.Master.cs">
+      <DependentUpon>MenuClient.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\c\MenuClient.Master.designer.cs">
+      <DependentUpon>MenuClient.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\MenuEmployee.Master.cs">
+      <DependentUpon>MenuEmployee.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\MenuEmployee.Master.designer.cs">
+      <DependentUpon>MenuEmployee.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Orders\WebSecurity - Copy %282%29.aspx.cs">
+      <DependentUpon>WebSecurity - Copy %282%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Orders\WebSecurity - Copy %282%29.aspx.designer.cs">
+      <DependentUpon>WebSecurity - Copy %282%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Orders\WebSecurity - Copy %283%29.aspx.cs">
+      <DependentUpon>WebSecurity - Copy %283%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Orders\WebSecurity - Copy %283%29.aspx.designer.cs">
+      <DependentUpon>WebSecurity - Copy %283%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Orders\WebSecurity - Copy.aspx.cs">
+      <DependentUpon>WebSecurity - Copy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Orders\WebSecurity - Copy.aspx.designer.cs">
+      <DependentUpon>WebSecurity - Copy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Orders\WebSecurity.aspx.cs">
+      <DependentUpon>WebSecurity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Orders\WebSecurity.aspx.designer.cs">
+      <DependentUpon>WebSecurity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Process\WebSecurity - Copy %282%29.aspx.cs">
+      <DependentUpon>WebSecurity - Copy %282%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Process\WebSecurity - Copy %282%29.aspx.designer.cs">
+      <DependentUpon>WebSecurity - Copy %282%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Process\WebSecurity - Copy %283%29.aspx.cs">
+      <DependentUpon>WebSecurity - Copy %283%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Process\WebSecurity - Copy %283%29.aspx.designer.cs">
+      <DependentUpon>WebSecurity - Copy %283%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Process\WebSecurity - Copy.aspx.cs">
+      <DependentUpon>WebSecurity - Copy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Process\WebSecurity - Copy.aspx.designer.cs">
+      <DependentUpon>WebSecurity - Copy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Process\WebSecurity.aspx.cs">
+      <DependentUpon>WebSecurity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Process\WebSecurity.aspx.designer.cs">
+      <DependentUpon>WebSecurity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Reports\WebSecurity - Copy %282%29.aspx.cs">
+      <DependentUpon>WebSecurity - Copy %282%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Reports\WebSecurity - Copy %282%29.aspx.designer.cs">
+      <DependentUpon>WebSecurity - Copy %282%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Reports\WebSecurity - Copy %283%29.aspx.cs">
+      <DependentUpon>WebSecurity - Copy %283%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Reports\WebSecurity - Copy %283%29.aspx.designer.cs">
+      <DependentUpon>WebSecurity - Copy %283%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Reports\WebSecurity - Copy.aspx.cs">
+      <DependentUpon>WebSecurity - Copy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Reports\WebSecurity - Copy.aspx.designer.cs">
+      <DependentUpon>WebSecurity - Copy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Reports\WebSecurity.aspx.cs">
+      <DependentUpon>WebSecurity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Reports\WebSecurity.aspx.designer.cs">
+      <DependentUpon>WebSecurity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Security\WebUser.aspx.cs">
+      <DependentUpon>WebUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Security\WebUser.aspx.designer.cs">
+      <DependentUpon>WebUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Security\WebModule.aspx.cs">
+      <DependentUpon>WebModule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Security\WebModule.aspx.designer.cs">
+      <DependentUpon>WebModule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Security\WebPermission.aspx.cs">
+      <DependentUpon>WebPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Security\WebPermission.aspx.designer.cs">
+      <DependentUpon>WebPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\Security\WebRole.aspx.cs">
+      <DependentUpon>WebRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\Security\WebRole.aspx.designer.cs">
+      <DependentUpon>WebRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\c\WebClientMenu.aspx.cs">
+      <DependentUpon>WebClientMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\c\WebClientMenu.aspx.designer.cs">
+      <DependentUpon>WebClientMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\e\WebEmployeeMenu.aspx.cs">
+      <DependentUpon>WebEmployeeMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\e\WebEmployeeMenu.aspx.designer.cs">
+      <DependentUpon>WebEmployeeMenu.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\WebSecurity\SecurityWS.wsdl" />
@@ -594,9 +922,7 @@
     <WCFMetadataStorage Include="Connected Services\WebReports\" />
     <WCFMetadataStorage Include="Connected Services\WebSecurity\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="WebForms\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

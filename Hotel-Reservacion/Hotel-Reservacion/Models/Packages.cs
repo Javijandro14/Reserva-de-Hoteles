@@ -12,37 +12,37 @@ namespace Hotel_Reservacion.Models
         private String name;
         private bool active;
 
-        public int IdArea
+        public int IdPackage
         {
             get
             {
-                return idArea;
+                return idPackage;
             }
             set
             {
-                idArea = value;
+                idPackage = value;
             }
         }
-        public int IdArea
+        public String Name
         {
             get
             {
-                return idArea;
+                return name;
             }
             set
             {
-                idArea = value;
+                name = value;
             }
         }
-        public int IdArea
+        public double Cost
         {
             get
             {
-                return idArea;
+                return cost;
             }
             set
             {
-                idArea = value;
+                cost = value;
             }
         }
         public bool Active

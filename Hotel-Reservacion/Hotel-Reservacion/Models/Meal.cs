@@ -12,48 +12,48 @@ namespace Hotel_Reservacion.Models
         private double cost;
         private Boolean active;
 
-        public int IdArea
+        public int IdMeal
         {
             get
             {
-                return idArea;
+                return idMeal;
             }
             set
             {
-                idArea = value;
+                idMeal = value;
             }
         }
-        public int IdArea
+        public String Name
         {
             get
             {
-                return idArea;
+                return name;
             }
             set
             {
-                idArea = value;
+                name = value;
             }
         }
-        public int IdArea
+        public String Description
         {
             get
             {
-                return idArea;
+                return description;
             }
             set
             {
-                idArea = value;
+                description = value;
             }
         }
-        public int IdArea
+        public Double Cost
         {
             get
             {
-                return idArea;
+                return cost;
             }
             set
             {
-                idArea = value;
+                cost = value;
             }
         }
         public bool Active

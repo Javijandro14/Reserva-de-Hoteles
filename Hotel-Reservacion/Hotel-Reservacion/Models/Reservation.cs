@@ -9,52 +9,51 @@ namespace Hotel_Reservacion.Models
     {
         private String idReservation, dateCrea, dateMod;
         private bool active;
-        private Client client;
-        private Room room;
-        private Packages packages;
+        private int idClient, idRoom, idPackages;
 
-        public int IdArea
+
+        public String IdReservation
         {
             get
             {
-                return idArea;
+                return idReservation;
             }
             set
             {
-                idArea = value;
+                idReservation = value;
             }
         }
-        public int IdArea
+        public int IdClient
         {
             get
             {
-                return idArea;
+                return idClient;
             }
             set
             {
-                idArea = value;
+                idClient = value;
             }
         }
-        public int IdArea
+        public int IdRoom
         {
             get
             {
-                return idArea;
+                return idRoom;
             }
             set
             {
-                idArea = value;
+                idRoom = value;
             }
         }
-        public int IdArea
+        public int IdPackages
         {
             get
             {
-                return idArea;
+                return idPackages;
             }
             set
             {
-                idArea = value;
+                idPackages = value;
             }
         }
         public String DateCrea

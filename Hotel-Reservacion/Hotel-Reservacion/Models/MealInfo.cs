@@ -7,29 +7,28 @@ namespace Hotel_Reservacion.Models
 {
     public class MealInfo
     {
-        private Meal meal;
-        private Food food;
+        private int idMeal,idFood;
 
-        public int IdArea
+        public int IdFood
         {
             get
             {
-                return idArea;
+                return idFood;
             }
             set
             {
-                idArea = value;
+                idFood = value;
             }
         }
-        public int IdArea
+        public int IdMeal
         {
             get
             {
-                return idArea;
+                return idMeal;
             }
             set
             {
-                idArea = value;
+                idMeal = value;
             }
         }
     }

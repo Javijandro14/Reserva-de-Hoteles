@@ -7,11 +7,11 @@ namespace Hotel_Reservacion.Models
 {
     public class Food
     {
-        private int idFood;
+        private int idFood, idRestaurant;
         private double cost;
         private String name, description, type, dateCrea, dateMod;
         private bool active;
-        private Restaurant restaurant;
+        
 
         public int IdFood
         {
@@ -57,15 +57,15 @@ namespace Hotel_Reservacion.Models
                 type = value;
             }
         }
-        public Restaurant Restaurant
+        public int IdRestaurant
         {
             get
             {
-                return restaurant;
+                return idRestaurant;
             }
             set
             {
-                restaurant = value;
+                idRestaurant = value;
             }
         }
         public double Cost

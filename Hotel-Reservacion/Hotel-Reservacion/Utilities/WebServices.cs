@@ -34,7 +34,7 @@ namespace Hotel_Reservacion.Utilities
             {
                 DataRow column = dt.NewRow();
                 column[0] = u.idUser;
-                column[0] = u.idUser;
+                column[1] = u.username;
                 column[0] = u.idUser;
                 column[0] = u.idUser;
                 column[0] = u.idUser;
@@ -537,7 +537,7 @@ namespace Hotel_Reservacion.Utilities
             }
             return dt;
         }
-
+        
         public bool createUser(User user)
         {
             return security.createUser(user);
@@ -660,7 +660,7 @@ namespace Hotel_Reservacion.Utilities
             var get = maintenence.getRoom(idRoom);
             return new Room()
             {
-                get.
+                IdRoom = get.idRoom
             };
         }
         

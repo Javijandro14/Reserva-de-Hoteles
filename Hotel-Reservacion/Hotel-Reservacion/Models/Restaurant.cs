@@ -7,53 +7,52 @@ namespace Hotel_Reservacion.Models
 {
     public class Restaurant
     {
-        private int idRestaurant;
+        private int idRestaurant, idArea;
         private String name, startTime, endTime, dateCrea, dateMod;
         private bool active;
-        private Area area;
 
-        public int IdArea
+        public int IdRestaurant
         {
             get
             {
-                return idArea;
+                return idRestaurant;
             }
             set
             {
-                idArea = value;
+                idRestaurant = value;
             }
         }
-        public int IdArea
+        public String Name
         {
             get
             {
-                return idArea;
+                return name;
             }
             set
             {
-                idArea = value;
+                name = value;
             }
         }
-        public int IdArea
+        public String StartTime
         {
             get
             {
-                return idArea;
+                return startTime;
             }
             set
             {
-                idArea = value;
+                startTime = value;
             }
         }
-        public int IdArea
+        public String EndTime
         {
             get
             {
-                return idArea;
+                return endTime;
             }
             set
             {
-                idArea = value;
+                endTime = value;
             }
         }
         public int IdArea

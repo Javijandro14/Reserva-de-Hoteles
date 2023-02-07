@@ -7,10 +7,10 @@ namespace Hotel_Reservacion.Models
 {
     public class Client
     {
-        private int idClient;
+        private int idClient, idUser;
         private bool active;
         private String dateCrea, dateMod;
-        private User user;
+        
 
         public int IdClient
         {
@@ -23,15 +23,15 @@ namespace Hotel_Reservacion.Models
                 idClient = value;
             }
         }
-        public User User
+        public int IdUser
         {
             get
             {
-                return user;
+                return idUser;
             }
             set
             {
-                user = value;
+                idUser = value;
             }
         }
         public String DateCrea

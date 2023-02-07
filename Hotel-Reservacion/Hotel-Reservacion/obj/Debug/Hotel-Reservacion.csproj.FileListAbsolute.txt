@@ -53,3 +53,4 @@ C:\Users\javie\Desktop\Workspace\C#\Reserva-de-Hoteles\Hotel-Reservacion\Hotel-R
 C:\Users\javie\Desktop\Workspace\C#\Reserva-de-Hoteles\Hotel-Reservacion\Hotel-Reservacion\obj\Debug\Hotel-Reservacion.csproj.CopyComplete
 C:\Users\javie\Desktop\Workspace\C#\Reserva-de-Hoteles\Hotel-Reservacion\Hotel-Reservacion\obj\Debug\Hotel-Reservacion.dll
 C:\Users\javie\Desktop\Workspace\C#\Reserva-de-Hoteles\Hotel-Reservacion\Hotel-Reservacion\obj\Debug\Hotel-Reservacion.pdb
+C:\Users\javie\Desktop\Workspace\C#\Reserva-de-Hoteles\Hotel-Reservacion\Hotel-Reservacion\obj\Debug\Hotel-Reservacion.csprojAssemblyReference.cache

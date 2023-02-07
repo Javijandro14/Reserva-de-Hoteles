@@ -11,37 +11,37 @@ namespace Hotel_Reservacion.Models
         private String name, description, dateCrea, dateMod;
         private bool active;
 
-        public int IdArea
+        public int IdRole
         {
             get
             {
-                return idArea;
+                return idRole;
             }
             set
             {
-                idArea = value;
+                idRole = value;
             }
         }
-        public int IdArea
+        public String Name
         {
             get
             {
-                return idArea;
+                return name;
             }
             set
             {
-                idArea = value;
+                name = value;
             }
         }
-        public int IdArea
+        public String Description
         {
             get
             {
-                return idArea;
+                return description;
             }
             set
             {
-                idArea = value;
+                description = value;
             }
         }
         public String DateCrea

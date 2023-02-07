@@ -7,9 +7,8 @@ namespace Hotel_Reservacion.Models
 {
     public class Room 
     {
-        private int idRoom, numShowers, numRooms, status;
+        private int idRoom, idArea, numShowers, numRooms, status;
         private String description, dateCrea, dateMod;
-        private Area area;
 
         public int IdRoom
         {
@@ -55,15 +54,15 @@ namespace Hotel_Reservacion.Models
                 description = value;
             }
         }
-        public Area Area
+        public int IdArea
         {
             get
             {
-                return area;
+                return idArea;
             }
             set
             {
-                area = value;
+                idArea = value;
             }
         }
         public String DateCrea

@@ -7,86 +7,85 @@ namespace Hotel_Reservacion.Models
 {
     public class Module
     {
-        private int idModule;
-        private Module module;
+        private int idModule, idFatherModule;
         private String name, description, path, level, order, dateCrea, dateMod;
         private bool active;
 
-        public int IdArea
+        public int IdModule
         {
             get
             {
-                return idArea;
+                return idModule;
             }
             set
             {
-                idArea = value;
+                idModule = value;
             }
         }
-        public int IdArea
+        public String Name
         {
             get
             {
-                return idArea;
+                return name;
             }
             set
             {
-                idArea = value;
+                name = value;
             }
         }
-        public int IdArea
+        public String Description
         {
             get
             {
-                return idArea;
+                return description;
             }
             set
             {
-                idArea = value;
+                description = value;
             }
         }
-        public int IdArea
+        public String Path
         {
             get
             {
-                return idArea;
+                return path;
             }
             set
             {
-                idArea = value;
+                path = value;
             }
         }
-        public int IdArea
+        public String Level
         {
             get
             {
-                return idArea;
+                return level;
             }
             set
             {
-                idArea = value;
+                level = value;
             }
         }
-        public int IdArea
+        public String Order
         {
             get
             {
-                return idArea;
+                return order;
             }
             set
             {
-                idArea = value;
+                order = value;
             }
         }
-        public int IdArea
+        public int IdFatherModule
         {
             get
             {
-                return idArea;
+                return idFatherModule;
             }
             set
             {
-                idArea = value;
+                idFatherModule = value;
             }
         }
         public String DateCrea

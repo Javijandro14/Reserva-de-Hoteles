@@ -7,10 +7,10 @@ namespace Hotel_Reservacion.Models
 {
     public class Events
     {
-        private int idEvent;
+        private int idEvent, idArea;
         private double cost;
         private String name, description, startDate, endDate, duration, dateCrea, dateMod;
-        private Area area;
+
 
         public int IdEvent
         {
@@ -111,15 +111,15 @@ namespace Hotel_Reservacion.Models
                 dateMod = value;
             }
         }
-        public Area Area
+        public int IdArea
         {
             get
             {
-                return area;
+                return idArea;
             }
             set
             {
-                area = value;
+                idArea = value;
             }
         }
     }

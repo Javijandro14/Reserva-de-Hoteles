@@ -7,64 +7,63 @@ namespace Hotel_Reservacion.Models
 {
     public class Purchase
     {
-        private int idPurchase;
-        private Client client;
+        private int idPurchase,idClient;
         private String description, transactionDate;
         private double total;
 
-        public int IdArea
+        public int IdPurchase
         {
             get
             {
-                return idArea;
+                return idPurchase;
             }
             set
             {
-                idArea = value;
+                idPurchase = value;
             }
         }
-        public int IdArea
+        public int IdClient
         {
             get
             {
-                return idArea;
+                return idClient;
             }
             set
             {
-                idArea = value;
+                idClient = value;
             }
         }
-        public int IdArea
+        public String Description
         {
             get
             {
-                return idArea;
+                return description;
             }
             set
             {
-                idArea = value;
+                description = value;
             }
         }
-        public int IdArea
+        public String TransactionDate
         {
             get
             {
-                return idArea;
+                return transactionDate;
             }
             set
             {
-                idArea = value;
+                transactionDate = value;
             }
         }
-        public int IdArea
+        public double Total
         {
             get
             {
-                return idArea;
+                return total;
             }
             set
             {
-                idArea = value;
+                total = value;
             }
         }
     }

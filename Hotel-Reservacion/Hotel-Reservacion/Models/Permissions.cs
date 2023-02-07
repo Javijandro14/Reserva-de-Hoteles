@@ -7,43 +7,41 @@ namespace Hotel_Reservacion.Models
 {
     public class Permissions
     {
-        private int idPermission;
+        private int idPermission, idModule, idRole;
         private String dateCrea, dateMod;
-        private Module module;
-        private Role role;
         private bool active;
 
-        public int IdArea
+        public int IdPermission
         {
             get
             {
-                return idArea;
+                return idPermission;
             }
             set
             {
-                idArea = value;
+                idPermission = value;
             }
         }
-        public int IdArea
+        public int IdModule
         {
             get
             {
-                return idArea;
+                return idModule;
             }
             set
             {
-                idArea = value;
+                idModule = value;
             }
         }
-        public int IdArea
+        public int IdRole
         {
             get
             {
-                return idArea;
+                return idRole;
             }
             set
             {
-                idArea = value;
+                idRole = value;
             }
         }
         public String DateCrea
